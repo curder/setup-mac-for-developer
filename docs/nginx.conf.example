@@ -1,0 +1,19 @@
+server {
+    listen       80;
+    server_name  SERVER_NAME;
+    root     /path/.vuepress/dist;
+    index    index.html;
+
+    charset utf-8;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    access_log /var/log/nginx/docs/avastocks.cn-access.log main;
+    error_log  /var/log/nginx/docs/avastocks.cn-error.log error;
+
+    location / {
+      try_files $uri $uri/ /index.html;
+      include  /etc/nginx/mime.types;
+    }
+}
