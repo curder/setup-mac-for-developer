@@ -58,3 +58,7 @@ brew install caskroom/cask/sublime-text
 - `Disable Package` 禁用插件
 - `Enable Package` 启用插件
 - `List Package` 插件列表
+
+## 插件
+
+TODO
