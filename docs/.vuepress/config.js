@@ -1,7 +1,6 @@
 module.exports = {
   title: "Mac开发软件安装",
   description: "",
-  base: "/",
   themeConfig: {
     editLinks: false,
     displayAllHeaders: false,
@@ -11,6 +10,6 @@ module.exports = {
       "/": require("./sidebar")
     }
   },
-  publicPath:
+  base:
     process.env.NODE_ENV === "production" ? "/setup-mac-for-developer/" : "/"
 };
