@@ -1,5 +1,5 @@
 module.exports = {
-  base: "/",
+  base: "/setup-mac-for-developer/",
   title: "Mac开发软件安装",
   description: "",
   themeConfig: {

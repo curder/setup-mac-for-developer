@@ -1,4 +1,8 @@
+[![Build Status](https://travis-ci.org/curder/setup-mac-for-developer-src.svg?branch=master)](https://travis-ci.org/curder/setup-mac-for-developer-src)
+
 > 注意：演示安装的 Mac 版本为 **10.13.6**
+
+github.io 地址：[setup-mac-for-developer](https://curder.github.io/setup-mac-for-developer/)
 
 ## 目录
 
