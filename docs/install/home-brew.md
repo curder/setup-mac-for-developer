@@ -13,7 +13,7 @@ brew 的地址是：[brew zh-cn](https://brew.sh/index_zh-cn)
 
 在执行命令的时候会一直停留在这行提示上，`Downloading Command Line Tools (macOS High Sierra version 10.13) for Xcode`。需要耐心等待，如果失败了也可以在 Apple 官网下载`.dmg`文件进行安装。
 
-![An image](./assets/install-xcode-command-line-tools.png)
+![An image](./../assets/install/xcode-command-line-tools.png)
 
 ## 安装
 
