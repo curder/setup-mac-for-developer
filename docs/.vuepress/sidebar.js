@@ -8,7 +8,8 @@ module.exports = [
       "browser",
       "oh-my-zsh",
       "sublime-text-3",
-      "phpstorm"
+      "phpstorm",
+      "nvm"
     ])
   },
   {
