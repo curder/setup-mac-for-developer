@@ -5,3 +5,5 @@
 - [安装 Homebrew](./install/home-brew.md)
 - [安装 iTerm2](./install/iterm2.md)
 - [安装浏览器](./install/browser.md)
+
+- [简单配置 iTerm2](./config/iterm2.md)

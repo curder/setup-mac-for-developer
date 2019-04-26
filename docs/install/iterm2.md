@@ -11,3 +11,7 @@ brew cask install iterm2
 ## 通过访问网站下载
 
 [iTerm2 Download](https://iterm2.com/downloads/stable/latest)
+
+## 配置
+
+[简单配置 iTerm2](/config/iterm2.md)
