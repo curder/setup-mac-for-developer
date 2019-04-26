@@ -10,5 +10,7 @@ module.exports = {
     sidebar: {
       "/": require("./sidebar")
     }
-  }
+  },
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/setup-mac-for-developer/" : "/"
 };
