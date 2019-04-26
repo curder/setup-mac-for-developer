@@ -2,7 +2,13 @@ module.exports = [
   {
     title: "软件安装",
     collapsable: false,
-    children: prefix("install", ["home-brew", "iterm2", "browser", "oh-my-zsh"])
+    children: prefix("install", [
+      "home-brew",
+      "iterm2",
+      "browser",
+      "oh-my-zsh",
+      "sublime-text-3"
+    ])
   },
   {
     title: "软件配置",
