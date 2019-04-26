@@ -1,4 +1,5 @@
 module.exports = {
+  base: "/",
   title: "Mac开发软件安装",
   description: "",
   themeConfig: {
@@ -9,7 +10,5 @@ module.exports = {
     sidebar: {
       "/": require("./sidebar")
     }
-  },
-  base:
-    process.env.NODE_ENV === "production" ? "/setup-mac-for-developer/" : "/"
+  }
 };
