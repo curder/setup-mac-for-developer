@@ -1,4 +1,4 @@
-# iTerm2 简单配置
+# 简单配置 iTerm2
 
 [安装 iTerm2](/install/iterm2.md)
 
