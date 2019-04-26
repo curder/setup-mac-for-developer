@@ -7,7 +7,8 @@ module.exports = [
       "iterm2",
       "browser",
       "oh-my-zsh",
-      "sublime-text-3"
+      "sublime-text-3",
+      "phpstorm"
     ])
   },
   {
