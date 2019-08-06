@@ -106,6 +106,8 @@ npm uninstall --global smart-npm
 brew install yarn --without-node
 ```
 
+如果上面的命令安装缓慢或者无法安装可以使用 `npm -g install yarn`。
+
 #### 参考链接
 
 - [node 版本管理工具 nvm-Mac 下安装及使用](https://segmentfault.com/a/1190000004404505)
