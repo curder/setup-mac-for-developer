@@ -10,7 +10,8 @@ module.exports = [
       "sublime-text-3",
       "phpstorm",
       "nvm",
-      "composer"
+      "composer",
+      "redis"
     ])
   },
   {
