@@ -9,13 +9,14 @@ module.exports = [
       "oh-my-zsh",
       "sublime-text-3",
       "phpstorm",
-      "nvm"
+      "nvm",
+      "composer"
     ])
   },
   {
     title: "软件配置",
     collapsable: false,
-    children: prefix("config", ["iterm2", "oh-my-zsh"])
+    children: prefix("config", ["iterm2", "oh-my-zsh", "composer"])
   }
 ];
 

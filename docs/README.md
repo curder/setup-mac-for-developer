@@ -13,6 +13,8 @@ github.io 地址：[setup-mac-for-developer](https://curder.github.io/setup-mac-
 - [安装 Sublime Text 3](./install/sublime-text-3.md)
 - [安装 PHPStorm](./install/phpstorm.md)
 - [安装 nvm 之 node 版本管理工具](./install/nvm.md)
+- [安装 Composer](./install/composer.md)
 
 - [简单配置 iTerm2](./config/iterm2.md)
 - [简单配置 Oh-My-Zsh](./config/oh-my-zsh.md)
+- [配置 Composer](./config/composer.md)
