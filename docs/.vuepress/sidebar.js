@@ -17,7 +17,7 @@ module.exports = [
   {
     title: "软件配置",
     collapsable: false,
-    children: prefix("config", ["iterm2", "oh-my-zsh", "composer"])
+    children: prefix("config", ["iterm2", "oh-my-zsh", "composer", "git"])
   }
 ];
 
