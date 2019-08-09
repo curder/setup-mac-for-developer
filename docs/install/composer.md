@@ -12,7 +12,7 @@ php -r "unlink('composer-setup.php');"
 ## 移动到全局 bin 路径
 
 ```
-mv composer.phar /usr/local/bin/composer
+sudo mv composer.phar /usr/local/bin/composer
 ```
 
 > 通过上面的命令将可执行文件 composer 移动到全局 bin 路径
