@@ -22,5 +22,7 @@ sudo mv composer.phar /usr/local/bin/composer
 ## 将 Composer 包关联的命令添加到 bin
 
 ```
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+export PATH="$PATH:$HOME/.composer/vendor/bin" # MacOSX 配置
+
+sudo echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> /etc/profile # CentOS 配置
 ```
