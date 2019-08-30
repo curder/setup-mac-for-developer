@@ -8,6 +8,9 @@
 composer global require slince/composer-registry-manager
 ```
 
+> 如果在安装的时候比较慢，可以使用命令 `composer config -g repos.packagist composer https://mirrors.aliyun.com/composer` 临时使用 aliyun 镜像来安装。
+> 如果需要还原镜像使用： `composer config -g repo.packagist composer https://packagist.org` 命令。
+
 通过上面的命令，可以得到命令 `composer repo`
 
 ![](./../assets/config/composer-repository-manager-info.png)
@@ -43,7 +46,6 @@ git config --global http.sslVerify false
 ```
 
 > 通过设置上面的 git 配置，可以忽略 ssl 的检查。
-
 
 ### 多线程下载 [hirak/prestissimo](https://github.com/hirak/prestissimo)
 
