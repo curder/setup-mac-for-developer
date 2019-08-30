@@ -55,7 +55,7 @@ git config --list # 通过命令查看当前配置
 - 执行命令使配置文件生效
 
   ```
-  git config core.excludesfile ~/.gitignore_global
+  git config --global core.excludesfile ~/.gitignore_global
   ```
 
 - 执行命令检查配置是否生效
