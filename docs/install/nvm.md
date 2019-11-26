@@ -37,15 +37,14 @@ nvm list
 ### 安装指定版本的 NodeJS
 
 ```
-nvm install v8.11.3
-nvm install v10.4.1
+nvm install v10.16.3
 ```
 
 ### 指定默认的 NodeJS 版本
 
 ```
-nvm use v8.11.3
-nvm alias default v8.11.3 # 指定默认的NodeJS版本
+nvm alias default v10.16.3 # 指定默认的NodeJS版本
+nvm use default
 ```
 
 ### 查看当前使用的 NodeJS 版本
@@ -59,7 +58,7 @@ nvm current
 ### 卸载指定的 NodeJS 版本
 
 ```
-nvm uninstall v8.11.3 // 卸载8.11.3
+nvm uninstall v10.16.3 // 卸载v10.16.3
 ```
 
 ### 查看本地安装的 NodeJS 版本
