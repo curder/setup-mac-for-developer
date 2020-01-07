@@ -18,6 +18,7 @@ module.exports = [
     title: "软件配置",
     collapsable: false,
     children: prefix("config", [
+      "home-brew",
       "iterm2",
       "oh-my-zsh",
       "composer",
