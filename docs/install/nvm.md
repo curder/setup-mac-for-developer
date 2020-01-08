@@ -7,7 +7,7 @@
 安装可以参考[nvm](https://github.com/creationix/nvm)项目的 README 文档，这里使用 curl 命令安装。
 
 ```
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.2/install.sh | bash
 ```
 
 默认自动将对应的配置写入了`~/.zshrc`中，内容为：
