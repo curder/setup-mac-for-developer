@@ -24,7 +24,9 @@ brew install libzip \
  expat \
  bison \
  webp \
- freetype --verbose
+ freetype \
+ tree \
+ telnet --verbose
 ```
 
 ## 解决国内速度慢的问题
