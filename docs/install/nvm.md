@@ -110,7 +110,7 @@ brew install yarn --without-node
 ## 安装全局依赖
 
 ```
-yarn add cross-env -g
+yarn global add cross-env live-server
 ```
 
 #### 参考链接
