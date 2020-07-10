@@ -11,7 +11,8 @@ module.exports = [
       "phpstorm",
       "nvm",
       "composer",
-      "redis"
+      "redis",
+      "mkcert"
     ])
   },
   {
@@ -23,6 +24,7 @@ module.exports = [
       "oh-my-zsh",
       "composer",
       "git",
+      "mkcert",
       "other"
     ])
   }

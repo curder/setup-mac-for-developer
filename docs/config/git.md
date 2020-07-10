@@ -1,4 +1,4 @@
-## Git 配置
+## 配置 Git
 
 Mac 系统自带 git，命令行路径在 `/usr/bin/git`，在编辑器如 PHPStorm 中使用 git 的路径是：`/usr/local/bin/git`。
 
