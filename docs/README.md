@@ -27,6 +27,7 @@ yarn run docs:build ## 生产
 - [安装 Sublime Text 3](./install/sublime-text-3.md)
 - [安装 PHPStorm](./install/phpstorm.md)
 - [安装 nvm 之 node 版本管理工具](./install/nvm.md)
+- [安装 php](./install/php.md)
 - [安装 Composer](./install/composer.md)
 - [安装 Redis](./install/redis.md)
 
