@@ -1,4 +1,4 @@
-# 安装与使用 nvm | smart-npm 和 yarn
+# 安装与使用 nvm | nrm 和 yarn
 
 目前主流的 node 版本管理工具有两种，[nvm](https://github.com/creationix/nvm) 和 [n](https://github.com/tj/n)。 两者差异挺大的，具体分析可以参考一下淘宝 FED 团队的一篇文章：[管理 node 版本，选择 nvm 还是 n？](http://taobaofed.org/blog/2015/11/17/nvm-or-n/)。
 
@@ -69,33 +69,38 @@ nvm list
 
 至此，nvm 相关的基本操作完成，更多的操作请查看[nvm](https://github.com/creationix/nvm)项目的 README 说明。
 
-## smart-npm
+## [nrm](https://github.com/Pana/nrm)
+
+`nrm` 是 `npm` 镜像仓库管理命令，可以帮助我们管理 `npm` 镜像资源的下载地址。
 
 ### 安装
 
 ```
-npm install --global smart-npm --registry=https://registry.npm.taobao.org/
+npm install -g nrm
 ```
 
-### 配置
+> 鉴于国内网络环境，如果下载速度慢或者下载失败，建议修改 npm 的从淘宝镜像地址下载资源，可以执行命令：`npm install -g nrm --registry=https://registry.npm.taobao.org/`
 
-在 `~/.zshrc`这个配置文件中添加别名。
+### 简单使用 nrm
 
-```
-echo "alias npm=smart-npm" >> ~/.zshrc
-```
-
-重新打开一个终端应该就能看到`smart-npm`安装在了系统里。
-
-### 卸载
+#### 查看可用源
 
 ```
-npm uninstall --global smart-npm
+nrm ls
+```
+#### 使用指定源
+
+```
+nrm use taobao
 ```
 
-> 成功卸载 `smart-npm` 安装包的同时需要将 `~/.zshrc` 里的 `alias npm=smart-npm` 一并删除。
+#### 检查当前使用源
 
-更多 `smart-npm` 的使用[参考这里](https://github.com/qiu8310/smart-npm)。
+```
+nrm current
+```
+
+> 此时，在 `~/.npmrc` 配置中自动配置：`registry=https://registry.npm.taobao.org/`
 
 ## 安装 yarn
 
