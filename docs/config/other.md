@@ -54,6 +54,13 @@ alias pf='vendor/bin/phpunit --filter '
 alias tinker='php artisan tinker'
 ```
 
+```bash
+echo "# command alias" >> ~/.zshrc
+echo "source ~/.alias" >> ~/.zshrc
+
+source ~/.zshrc # 重载配置
+```
+
 将上面的配置文件写入到 `~/.alias` 文件中，并在 `~/.zshrc` 中通过 `source ~/.alias` 的方式引入。
 
 > 更多详情[参考这里](http://osxdaily.com/2010/06/22/remove-the-last-login-message-from-the-terminal/)
