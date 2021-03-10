@@ -12,6 +12,7 @@ module.exports = [
       "nvm",
       "php",
       "composer",
+      "hub",
       "redis",
       "mkcert"
     ])

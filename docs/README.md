@@ -29,6 +29,7 @@ yarn run docs:build ## 生产
 - [安装 nvm 之 node 版本管理工具](./install/nvm.md)
 - [安装 php](./install/php.md)
 - [安装 Composer](./install/composer.md)
+- [安装 Hub](./install/hub.md)
 - [安装 Redis](./install/redis.md)
 
 ### 配置
