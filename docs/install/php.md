@@ -6,6 +6,11 @@
 brew tap shivammathur/php
 ```
 
+## 安装brew-php-switcher
+```
+brew install brew-php-switcher
+```
+
 ## 检查安装的效果
 ```bash
 brew search brew-php-switcher
