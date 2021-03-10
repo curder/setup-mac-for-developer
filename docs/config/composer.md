@@ -69,3 +69,9 @@ composer global require deployer/deployer deployer/recipes curder/deployphp-reci
 ```
 composer global require phpunit/phpunit laravel/installer friendsofphp/php-cs-fixer squizlabs/php_codesniffer --no-progress --profile --prefer-dist
 ```
+
+### 下载全局命令
+
+```
+composer global require laravel/installer -vvv
+```
