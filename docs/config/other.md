@@ -2,18 +2,17 @@
 
 ## 屏蔽新建窗口 last login 提示
 
-```
+```bash
 touch ~/.hushlogin
 ```
 
 ## 添加命令行快捷方式
 
 ```
-alias -='cd -'
-alias ...=../..
-alias ....=../../..
-alias .....=../../../..
-alias ......=../../../../..
+alias ...='../..'
+alias ....='../../..'
+alias .....='../../../..'
+alias ......='../../../../..'
 
 # git
 alias ga='git add'
