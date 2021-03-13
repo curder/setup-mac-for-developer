@@ -26,6 +26,7 @@ brew install libzip \
  webp \
  freetype \
  tree \
+ pkg-config \
  telnet --verbose
 ```
 
