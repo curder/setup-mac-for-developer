@@ -26,12 +26,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - uses: borales/actions-yarn@v2.0.0
+      - name: Install node dependencies
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install # will run `yarn install` command
+
+      - name: Docs build
+        uses: borales/actions-yarn@v2.0.0
           with:
-            cmd: install # will run `yarn install` command
-      - uses: borales/actions-yarn@v2.0.0
-          with:
-            cmd: build # will run `yarn build` command
+            cmd: docs:build # will run `yarn docs:build` command
 
       - name: Deployment
         uses: peaceiris/actions-gh-pages@v3
