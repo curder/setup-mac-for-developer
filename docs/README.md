@@ -2,8 +2,8 @@
 
 > 注意：演示安装的 Mac 版本为 **10.13.6**
 
-- github.io 地址：[setup-mac-for-developer](https://curder.github.io/setup-mac-for-developer)
-- github 源代码地址：[setup-mac-for-developer-src](https://github.com/curder/setup-mac-for-developer)
+- github.io 地址：[curder/setup-mac-for-developer](https://curder.github.io/setup-mac-for-developer)
+- github 源代码地址：[curder/setup-mac-for-developer](https://github.com/curder/setup-mac-for-developer)
 
 ## 开始
 
