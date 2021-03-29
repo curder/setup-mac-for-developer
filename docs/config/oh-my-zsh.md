@@ -2,7 +2,7 @@
 
 Oh-My-Zsh 的默认配置在 `~/.zshrc` 文件中配置可以配置，修改默认的基本配置
 
-```
+```bash
 ZSH_THEME="robbyrussell"  # 默认 zsh 主题
 export UPDATE_ZSH_DAYS=30 # 30天检查更新 zsh 并提示是否更新
 HIST_STAMPS="yyyy-mm-dd"  # 历史记录时间格式
@@ -27,7 +27,7 @@ Oh-My-Zsh 默认开启了 `git` 插件，提供了大量 `git` 别名，具体�
 
 [autojump](https://github.com/wting/autojump) 是一个命令行工具，它允许用户可以直接跳转到常用的目录，而不用管用户现在身在何处。
 
-```
+```bash
 brew install autojump
 ```
 
@@ -37,7 +37,7 @@ brew install autojump
 
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) 是一款根据命令历史输入时的命令进行输入提示的插件。
 
-```
+```bash
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
@@ -49,7 +49,7 @@ Oh-My-Zsh 的强大之处是安装各种插件加速我们在命令行终端的�
 
 执行下面的命令手动升级
 
-```
+```bash
 upgrade_oh_my_zsh
 ```
 
@@ -57,6 +57,6 @@ upgrade_oh_my_zsh
 
 如果想卸载 Oh-My-Zsh, 从命令行运行下面的命令， 将删除本身和恢复系统以前的 `bash` 或者 `zsh` 配置。
 
-```
+```bash
 uninstall_oh_my_zsh zsh
 ```

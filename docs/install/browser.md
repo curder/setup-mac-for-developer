@@ -4,7 +4,7 @@
 
 #### 通过 homebrew cask
 
-```
+```bash
 brew cask install google-chrome
 ```
 
@@ -20,7 +20,7 @@ brew cask install google-chrome
 
 #### 通过 homebrew cask
 
-```
+```bash
 brew cask install firefox
 ```
 

@@ -2,13 +2,13 @@
 
 Hub 是一个git的命令行拓展，针对于我们经常操作[GitHub](https://github.com)相关任务，例如：创建仓库、克隆仓库等，而无需离开终端。
 
-```
+```bash
 brew install hub
 ```
 
 ## 检查是否安装
 
-```
+```bash
 hub version
 ```
 
@@ -16,7 +16,7 @@ hub version
 
 - 环境变量
 将下面的语句添加到对应的bash配置中，比如：`~/.zshrc`
-```
+```bash
 # hub integration
 eval "$(hub alias -s)"
 ```
@@ -42,17 +42,17 @@ github.com:
 第一次使用命令操作仓库时，可能会需要需要输入用户名和密码的交互界面，请输入用户名，密码为：**上面得到的TOKEN**，后续则不需要重复用户名和密码的操作。
 
 - 下载仓库
-```
+```bash
 git clone curder/setup-mac-for-developer-src
 ```
 
 - 创建仓库
-```
+```bash
 git create curder/hub-demo
 ```
 
 - 创建release
-```
+```bash
 git release create 1.1.0
 ```
 > 仓库当前仓库的 `release` 版本为`1.1.0`

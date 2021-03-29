@@ -6,13 +6,13 @@
 
 Mac 下的安装 在 Mac 系统下默认自带 zsh，我们可以使用 brew 命令更新一下。
 
-```
+```bash
 brew install zsh
 ```
 
 ## 切换到 zsh 并检查
 
-```
+```bash
 chsh -s `which zsh` root # 为root用户修改默认shell为zsh
 
 chsh -s /bin/zsh # 为当前用户修改默认shell为zsh
@@ -26,7 +26,7 @@ chsh -s /bin/bash # 恢复bash命令
 
 - curl 和 wget 两种安装方式二选一即可
 
-```
+```bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # 通过curl进行安装
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" # 通过wget进行安装
 ```

@@ -17,7 +17,7 @@ brew 的地址是：[brew zh-cn](https://brew.sh/index_zh-cn)
 
 ## 安装
 
-```
+```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
@@ -27,7 +27,7 @@ brew 的地址是：[brew zh-cn](https://brew.sh/index_zh-cn)
 
 这里安装 `wget` 命令为例：
 
-```
+```bash
 brew install wget
 ```
 

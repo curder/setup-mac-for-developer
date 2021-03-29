@@ -4,7 +4,7 @@
 
 ### 通过 homebrew cask
 
-```
+```bash
 brew cask install iterm2
 ```
 

@@ -6,13 +6,13 @@
 
 安装可以参考[nvm](https://github.com/creationix/nvm)项目的 README 文档，这里使用 curl 命令安装。
 
-```
+```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.2/install.sh | bash
 ```
 
 默认自动将对应的配置写入了`~/.zshrc`中，内容为：
 
-```
+```bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -22,7 +22,7 @@ export NVM_DIR="$HOME/.nvm"
 
 ### 查看可供使用的 NodeJS
 
-```
+```bash
 nvm ls-remote
 ```
 
@@ -30,26 +30,26 @@ nvm ls-remote
 
 ### 查看本地已经有的 NodeJS
 
-```
+```bash
 nvm list
 ```
 
 ### 安装指定版本的 NodeJS
 
-```
+```bash
 nvm install v10.16.3
 ```
 
 ### 指定默认的 NodeJS 版本
 
-```
+```bash
 nvm alias default v10.16.3 # 指定默认的NodeJS版本
 nvm use default
 ```
 
 ### 查看当前使用的 NodeJS 版本
 
-```
+```bash
 nvm current
 ```
 
@@ -57,13 +57,13 @@ nvm current
 
 ### 卸载指定的 NodeJS 版本
 
-```
+```bash
 nvm uninstall v10.16.3 // 卸载v10.16.3
 ```
 
 ### 查看本地安装的 NodeJS 版本
 
-```
+```bash
 nvm list
 ```
 
@@ -75,7 +75,7 @@ nvm list
 
 ### 安装
 
-```
+```bash
 npm install -g nrm
 ```
 
@@ -85,18 +85,18 @@ npm install -g nrm
 
 #### 查看可用源
 
-```
+```bash
 nrm ls
 ```
 #### 使用指定源
 
-```
+```bash
 nrm use taobao
 ```
 
 #### 检查当前使用源
 
-```
+```bash
 nrm current
 ```
 
@@ -106,7 +106,7 @@ nrm current
 
 [参考这里](https://yarn.bootcss.com/docs/install/#mac-stable)
 
-```
+```bash
 brew install yarn --without-node
 ```
 
@@ -114,7 +114,7 @@ brew install yarn --without-node
 
 ## 安装全局依赖
 
-```
+```bash
 yarn global add cross-env live-server
 ```
 

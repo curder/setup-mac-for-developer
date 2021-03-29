@@ -4,7 +4,7 @@ Mac 系统自带 git，命令行路径在 `/usr/bin/git`，在编辑器如 PHPSt
 
 ### 建立 git 软连接
 
-```
+```bash
 ln -s /usr/bin/git /usr/local/bin/git
 ```
 
@@ -14,7 +14,7 @@ ln -s /usr/bin/git /usr/local/bin/git
 
 #### 初始化用户信息
 
-```
+```bash
 git config --global user.name <"John Doe">
 git config --global user.email <johndoe@example.com>
 ```
@@ -23,7 +23,7 @@ git config --global user.email <johndoe@example.com>
 
 参考 [Git 文档](https://git-scm.com/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE#%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF)
 
-```
+```bash
 git config --list # 通过命令查看当前配置
 ```
 
@@ -53,12 +53,11 @@ git config --list # 通过命令查看当前配置
   > 将上面的内容保存到`~/.gitignore_global`文件
 
 - 执行命令使配置文件生效
-
-  ```
+  ```bash
   git config --global core.excludesfile ~/.gitignore_global
   ```
 
 - 执行命令检查配置是否生效
-  ```
+  ```bash
   git config core.excludesfile
   ```

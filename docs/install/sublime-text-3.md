@@ -4,7 +4,7 @@ Sublime Text 3 的[官方网站](https://www.sublimetext.com/)，找到适合自
 
 这里选择使用 Homebrew 进行安装。
 
-```
+```bash
 brew install caskroom/cask/sublime-text
 ```
 

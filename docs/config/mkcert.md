@@ -2,13 +2,13 @@
 
 ### 初始化配置
 
-```
+```bash
 mkcert -install
 ```
 
 ### 创建统一存放目录
 
-```
+```bash
 mkdir -p ~/.certs/ # 创建对应存放目录
 
 ls -l ~/.certs # 查看目录是否存在
@@ -16,7 +16,7 @@ ls -l ~/.certs # 查看目录是否存在
 
 ### 生成证书
 
-```
+```bash
 export ssl_path=~/.certs
 export domain=example.test
 
@@ -55,7 +55,7 @@ mkcert -key-file ${ssl_path}/${domain}/privkey.pem \
 
 ### 在`laravel-mix`项目中使用
 
-```
+```js
 mix.browserSync({
     proxy: "https://www.example.com",
     https: {

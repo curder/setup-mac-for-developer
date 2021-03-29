@@ -1,6 +1,6 @@
 ## Homebrew 安装依赖
 
-```
+```bash
 brew install libzip \
  libpq \
  mozjpeg \
