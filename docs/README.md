@@ -1,15 +1,15 @@
-[![Build Status](https://travis-ci.org/curder/setup-mac-for-developer-src.svg?branch=master)](https://travis-ci.org/curder/setup-mac-for-developer-src)
+[![Build Status](https://github.com/curder/setup-mac-for-developer/actions/workflows/deploy.yml/badge.svg)](https://github.com/curder/setup-mac-for-developer/actions?query=deploy%3Amaster)
 
 > 注意：演示安装的 Mac 版本为 **10.13.6**
 
 - github.io 地址：[setup-mac-for-developer](https://curder.github.io/setup-mac-for-developer)
-- github 源代码地址：[setup-mac-for-developer-src](https://github.com/curder/setup-mac-for-developer-src)
+- github 源代码地址：[setup-mac-for-developer-src](https://github.com/curder/setup-mac-for-developer)
 
 ## 开始
 
 ```
-git clone https://github.com/curder/setup-mac-for-developer-src.git
-cd setup-mac-for-developer-src
+git clone https://github.com/curder/setup-mac-for-developer.git
+cd setup-mac-for-developer
 
 yarn run docs:dev ## 开发
 yarn run docs:build ## 生产
