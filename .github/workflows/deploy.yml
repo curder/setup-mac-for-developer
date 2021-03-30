@@ -28,7 +28,7 @@ jobs:
 
 
       - uses: actions/setup-node@v2
-      - run: yarn config set cache-folder $(pwd)/.yarn-cache
+      - run: yarn config set cache-folder ~/.yarn-cache
       - run: yarn install
       - run: yarn prod
 
