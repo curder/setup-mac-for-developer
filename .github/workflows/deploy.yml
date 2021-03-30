@@ -30,7 +30,7 @@ jobs:
         run: yarn install
       
       - name: Build Docs
-      - run: yarn prod
+        run: yarn prod
 
       - name: Deployment
         uses: peaceiris/actions-gh-pages@v3
