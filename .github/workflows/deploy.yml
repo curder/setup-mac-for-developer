@@ -26,16 +26,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      # see: https://github.com/marketplace/actions/github-action-for-yarn
-      - name: Install node dependencies
-        uses: borales/actions-yarn@v2.0.0
+      - name: Build docs
+        uses: actions/setup-node@v2
         with:
-          cmd: install # will run `yarn install` command
-
-      - name: Docs build
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: prod # will run `yarn prod` command
+          node-version: '12.x'
+        - run: yarn install
+        - run: yarn prod
 
       - name: Deployment
         uses: peaceiris/actions-gh-pages@v3
