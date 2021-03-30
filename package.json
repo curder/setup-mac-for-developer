@@ -5,7 +5,7 @@
     "vuepress": "^1.8.0"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "watch": "vuepress dev docs",
+    "prod": "vuepress build docs"
   }
 }
