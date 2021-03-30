@@ -26,12 +26,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Build docs
-        uses: actions/setup-node@v2
-        with:
-          node-version: '12.x'
-        - run: yarn install
-        - run: yarn prod
+
+      - uses: actions/setup-node@v2
+      - run: yarn install
+      - run: yarn prod
 
       - name: Deployment
         uses: peaceiris/actions-gh-pages@v3
