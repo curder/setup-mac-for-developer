@@ -21,15 +21,15 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@v2
         with:
-          path: ~/.yarn-cache
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
-
-      - uses: actions/setup-node@v2
-      - run: yarn config set cache-folder ~/.yarn-cache
-      - run: yarn install
+      - name: Install packages
+        run: yarn install
+      
+      - name: Build Docs
       - run: yarn prod
 
       - name: Deployment
