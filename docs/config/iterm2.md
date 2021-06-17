@@ -20,9 +20,11 @@
 
 ## 设置快速切换快捷键
 
-- 快捷键 `Command+,` ->> 选择 `Keys` ->> 找到 HotKey，并点击记录你的快捷键。
+- 快捷键 `Command+,` ->> 选择 `Keys` ->> 找到 HotKey，并点击记录你的快捷键，我这里使用的是 **Command + \`**
 
 ![](./../assets/config/iterm2-show-or-hiden-all-windows.png)
+
+设置好快捷键之后，在任意界面使用快捷键都能快速切换 iTerm2。
 
 ## 设置正确的SSH连接字符集
 
