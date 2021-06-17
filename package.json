@@ -2,6 +2,7 @@
   "dependencies": {
     "glob-parent": "^5.1.2",
     "is-svg": "^4.2.2",
+    "normalize-url": "^4.5.1",
     "ssri": "^8.0.1",
     "vuepress": "^1.8.0"
   },
