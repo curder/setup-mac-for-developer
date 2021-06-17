@@ -23,3 +23,21 @@
 - 快捷键 `Command+,` ->> 选择 `Keys` ->> 找到 HotKey，并点击记录你的快捷键。
 
 ![](./../assets/config/iterm2-show-or-hiden-all-windows.png)
+
+## 设置正确的SSH连接字符集
+
+当我们需要使用SSH连接远程服务器，会报如下错误：
+
+::: danger 报错
+-bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+:::
+
+在 `/etc/ssh/ssh_config` 文件的末尾，将 `SendEnv LANG LC_*` 使用`#`注释，添加指定的字符集 `SendEnv LANG LC_ALL=en_US.UTF-8`，如下：
+
+``` {2,3}
+Host *
+        #SendEnv LANG LC_* # 注释默认配置
+        SendEnv LANG LC_ALL=en_US.UTF-8 # 添加这一行
+```
+
+相关链接，[查看这里](https://segmentfault.com/a/1190000022755839)
