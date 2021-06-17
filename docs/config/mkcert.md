@@ -68,3 +68,29 @@ mix.browserSync({
 > 配置之前需要保证`https://example.com`能正常访问。
 >
 > `key` 和 `cert` 的配置跟当前生成证书时指定的文件保持一致。
+
+### 在 Docker nginx 中使用
+
+在项目的配置文件中添加如下样例代码：
+
+```nginx
+server {
+    listen       80;
+    server_name  example.com;
+    return 301 https://$server_name$request_uri;
+}
+
+server {
+    listen       443 ssl;
+    server_name  example.com;
+
+    # 容器中公、私钥对应路径
+    ssl_certificate     /etc/nginx/ssl/example.com/fullchain.pem;
+    ssl_certificate_key /etc/nginx/ssl/example.com/privkey.pem;
+
+    root   /usr/share/nginx/html;
+    index  index.html index.htm;
+
+    # ...
+}
+```
