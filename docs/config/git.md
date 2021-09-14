@@ -42,7 +42,7 @@ git config --list # 通过命令查看当前配置
   ._*
   .Spotlight-V100
   .Trashes
-  Icon?
+  # Icon?
   ehthumbs.db
   Thumbs.db
   .idea/
