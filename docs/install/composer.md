@@ -18,9 +18,9 @@ sudo mv composer.phar /usr/local/bin/composer
 
 > 通过上面的命令将可执行文件 composer 移动到全局 bin 路径
 
-![](./../assets/install/show-composer-install-info.png)
 
-默认情况下安装的 composer 为 2.0.11 的版本。切换到 1.10.20
+
+默认情况下安装的 composer 为 `2.1.11` 的版本。切换到 `1.10.23`
 
 ```bash
 composer self-update --1
@@ -29,13 +29,13 @@ composer self-update --1
 检查并确定下版本
 
 ```bash
-composer -V
+composer -V # 查看当前composer版本
 ```
 
 ## 将 Composer 包关联的命令添加到 bin
 
 ```bash
-export PATH="$PATH:$HOME/.composer/vendor/bin" # MacOSX 配置
+export PATH="$PATH:$HOME/.composer/vendor/bin" # MacOSX 配置到 `~/.zshrc` 文件
 
-sudo echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> /etc/profile # CentOS 配置
+export PATH="$PATH:$HOME/.config/composer/vendor/bin" # CentOS 配置到 `/etc/profile` 文件
 ```
