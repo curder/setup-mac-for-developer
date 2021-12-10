@@ -37,13 +37,13 @@ nvm list
 ### 安装指定版本的 NodeJS
 
 ```bash
-nvm install v10.16.3
+nvm install v16.13.0
 ```
 
 ### 指定默认的 NodeJS 版本
 
 ```bash
-nvm alias default v10.16.3 # 指定默认的NodeJS版本
+nvm alias default v16.13.0 # 指定默认的NodeJS版本
 nvm use default
 ```
 
@@ -58,7 +58,7 @@ nvm current
 ### 卸载指定的 NodeJS 版本
 
 ```bash
-nvm uninstall v10.16.3 // 卸载v10.16.3
+nvm uninstall v16.13.0 // 卸载v16.13.0
 ```
 
 ### 查看本地安装的 NodeJS 版本
@@ -107,10 +107,8 @@ nrm current
 [参考这里](https://yarn.bootcss.com/docs/install/#mac-stable)
 
 ```bash
-brew install yarn --without-node
+npm -g install yarn
 ```
-
-如果上面的命令安装缓慢或者无法安装可以使用 `npm -g install yarn`。
 
 ## 安装全局依赖
 
