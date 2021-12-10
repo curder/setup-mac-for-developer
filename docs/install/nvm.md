@@ -24,7 +24,7 @@ export NVM_DIR="$HOME/.nvm"
 
 ## 简单使用 nvm
 
-### 查看可供使用的 NodeJS
+### 查看可供使用稳定版本
 
 ```bash
 nvm ls-remote
@@ -52,7 +52,7 @@ nvm use default
 ```
 > 如果是切换不同版本的node，请确保对应的依赖已经安装，比如`yarn`，因为不同版本的node，对应的bin目录不一致，目录为：`~/.nvm/versions/node/v16.13.0/bin`。
 
-### 查看当前使用的 NodeJS 版本
+### 查看系统当前使用的 NodeJS 版本
 
 ```bash
 nvm current
@@ -64,12 +64,6 @@ nvm current
 
 ```bash
 nvm uninstall v16.13.0 // 卸载v16.13.0
-```
-
-### 查看本地安装的 NodeJS 版本
-
-```bash
-nvm list
 ```
 
 至此，nvm 相关的基本操作完成，更多的操作请查看[nvm](https://github.com/creationix/nvm)项目的 README 说明。
