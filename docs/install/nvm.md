@@ -2,12 +2,14 @@
 
 目前主流的 node 版本管理工具有两种，[nvm](https://github.com/creationix/nvm) 和 [n](https://github.com/tj/n)。 两者差异挺大的，具体分析可以参考一下淘宝 FED 团队的一篇文章：[管理 node 版本，选择 nvm 还是 n？](http://taobaofed.org/blog/2015/11/17/nvm-or-n/)。
 
+这里选择 nvm 管理 node 版本。
+
 ## 安装 nvm
 
 安装可以参考[nvm](https://github.com/creationix/nvm)项目的 README 文档，这里使用 curl 命令安装。
 
 ```bash
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.2/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 ```
 
 默认自动将对应的配置写入了`~/.zshrc`中，内容为：
@@ -17,6 +19,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
+
+可以通过命令 `source ~/.zshrc` 加载，或者重新打开一个终端。
 
 ## 简单使用 nvm
 
@@ -46,6 +50,7 @@ nvm install v16.13.0
 nvm alias default v16.13.0 # 指定默认的NodeJS版本
 nvm use default
 ```
+> 如果是切换不同版本的node，请确保对应的依赖已经安装，比如`yarn`，因为不同版本的node，对应的bin目录不一致，目录为：`~/.nvm/versions/node/v16.13.0/bin`。
 
 ### 查看当前使用的 NodeJS 版本
 
@@ -53,7 +58,7 @@ nvm use default
 nvm current
 ```
 
-> NodeJS 安装的目录一般在`~/.nvm/versions/node`下。
+> nvm管理的node安装的目录在 `~/.nvm/versions/node/` 下。
 
 ### 卸载指定的 NodeJS 版本
 
