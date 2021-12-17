@@ -1,4 +1,4 @@
-## 安装 Redis
+# 安装 Redis
 
 ```bash
 brew install redis

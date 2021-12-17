@@ -1,4 +1,4 @@
-## 安装 Composer
+# 安装 Composer
 
 ## 安装命令
 

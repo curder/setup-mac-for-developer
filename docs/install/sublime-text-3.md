@@ -1,4 +1,4 @@
-## 安装 Sublime Text 3
+# 安装 Sublime Text 3
 
 Sublime Text 3 的[官方网站](https://www.sublimetext.com/)，找到适合自己的平台进行下载并安装。
 

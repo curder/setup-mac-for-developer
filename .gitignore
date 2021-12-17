@@ -1,1 +1,9 @@
 node_modules
+*~
+_book
+.DS_Store
+.temp
+.cache
+
+docs/.vuepress/.temp/
+docs/.vuepress/.cache/

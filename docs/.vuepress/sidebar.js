@@ -1,7 +1,6 @@
 module.exports = [
   {
-    title: "软件安装",
-    collapsable: false,
+    text: "软件安装",
     children: prefix("install", [
       "home-brew",
       "iterm2",
@@ -18,8 +17,7 @@ module.exports = [
     ])
   },
   {
-    title: "软件配置",
-    collapsable: false,
+    text: "软件配置",
     children: prefix("config", [
       "home-brew",
       "iterm2",
@@ -33,5 +31,5 @@ module.exports = [
 ];
 
 function prefix(prefix, children) {
-  return children.map(child => `${prefix}/${child}`);
+  return children.map(child => `/${prefix}/${child}.md`);
 }
