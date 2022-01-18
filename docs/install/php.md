@@ -1,4 +1,6 @@
-# 安装 PHP
+# 安装 PHP(选)
+
+> **如果选择使用 MAMP 作为开发环境的话，可以不用使用这种方式单独安装 PHP**
 
 ## 安装 [homebrew-php](https://github.com/shivammathur/homebrew-php) Tap
 

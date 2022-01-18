@@ -1,5 +1,9 @@
 # 安装 Composer
 
+> **注意：** 执行安装命令前保证 PHP 已经安装到电脑并放在对应的 bin 目录下。
+>
+>在终端执行 `php --version`，可以查看PHP版本，这里建议使用 [PHP 8.1](https://www.php.net/releases/8.1/zh.php) 作为面向未来的语言版本。
+
 ## 安装命令
 
 ```bash

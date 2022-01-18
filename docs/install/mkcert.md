@@ -1,4 +1,4 @@
-# 安装 mkcert
+# 安装 mkcert(选)
 
 [FiloSottile/mkcert](https://github.com/FiloSottile/mkcert) 是制作本地信任的开发证书的简单工具。
 
