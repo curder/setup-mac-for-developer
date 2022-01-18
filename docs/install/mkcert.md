@@ -6,7 +6,3 @@
 brew install mkcert
 brew install nss # if you use Firefox
 ```
-
-## 配置
-
-[简单配置 mkcert](/config/mkcert.md)
