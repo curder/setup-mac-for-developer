@@ -1,0 +1,1 @@
+const e={key:"v-306fd96c",path:"/install/mkcert.html",title:"\u5B89\u88C5 mkcert(\u9009)",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u914D\u7F6E",slug:"\u914D\u7F6E",children:[]}],git:{updatedTime:1642505079e3,contributors:[{name:"curder",email:"q.curder@gmail.com",commits:1}]},filePathRelative:"install/mkcert.md"};export{e as data};
