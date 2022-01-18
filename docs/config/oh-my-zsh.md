@@ -1,6 +1,8 @@
 # 简单配置 Oh-My-Zsh
 
-Oh-My-Zsh 的默认配置在 `~/.zshrc` 文件中配置可以配置，修改默认的基本配置
+Oh-My-Zsh 的默认配置在 `~/.zshrc` 文件中配置可以配置，修改默认的基本配置。
+
+> **注意：** 如果配置文件 `~/.zshrc` 不存在则通过手动创建它，默认的配置文件在 [github.com/ohmyzsh/ohmyzsh/blob/templates/zshrc.zsh-template](https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template)。
 
 ```bash
 ZSH_THEME="robbyrussell"  # 默认 zsh 主题
@@ -8,7 +10,7 @@ export UPDATE_ZSH_DAYS=30 # 30天检查更新 zsh 并提示是否更新
 HIST_STAMPS="yyyy-mm-dd"  # 历史记录时间格式
 export LANG=en_US.UTF-8   # 语言
 
-plugins=(git autojump zsh-autosuggestions) # 开启常用插件,其中 git 是默认自带，其他两个的安装在下面有介绍
+plugins=(git autojump zsh-autosuggestions) # 开启常用插件,其中 git 是默认自带，其他两个插件的安装在下面有介绍
 ```
 
 ## 插件管理
@@ -31,7 +33,7 @@ Oh-My-Zsh 默认开启了 `git` 插件，提供了大量 `git` 别名，具体�
 brew install autojump
 ```
 
-> 更多使用[查看这里](https://github.com/curder/blog/blob/master/others/how-to-use-autojump-plugin.md)
+> 更多使用[查看这里](https://curder.github.io/blog/others/how-to-use-autojump-plugin.html)
 
 ### 安装 autosuggestions 插件
 
@@ -43,7 +45,7 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 
 ### 其他插件
 
-Oh-My-Zsh 的强大之处是安装各种插件加速我们在命令行终端的体验，更多插件相关的安装和使用请[查看这里](https://github.com/curder/blog/blob/master/others/oh-my-zsh-common-plugins.md)。
+Oh-My-Zsh 的强大之处是安装各种插件加速命令行终端的体验，更多插件相关的安装和使用请[查看这里](https://github.com/curder/blog/blob/master/docs/others/oh-my-zsh-common-plugins.md)。
 
 ## 手动升级 Oh-My-Zsh
 
