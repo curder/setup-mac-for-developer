@@ -6,13 +6,19 @@
 
 ## 安装 nvm
 
-安装可以参考[nvm](https://github.com/creationix/nvm)项目的 README 文档，这里使用 curl 命令安装。
+> **安装前请保证电脑已经正确安装并配置好了Oh-My-Zsh。**
+
+安装可以参考[nvm](https://github.com/creationix/nvm)项目的 README 文档，可以在下面的命令二选一条在终端执行。
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
-默认自动将对应的配置写入了`~/.zshrc`中，内容为：
+```bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+````
+
+如果安装并配置好了 Oh-My-Zsh 终端的话，默认自动将对应的配置写入了 `~/.zshrc` 文件中，内容为：
 
 ```bash
 export NVM_DIR="$HOME/.nvm"
