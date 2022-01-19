@@ -1,7 +1,5 @@
 # 简单配置 iTerm2
 
-[安装 iTerm2](/install/iterm2.md)
-
 使用快捷键 `Command + ,` 打开 iTerm2 的设置。
 
 ## 打开新窗口停留在上一次的路径
