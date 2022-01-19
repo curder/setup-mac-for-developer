@@ -5,12 +5,14 @@ Oh-My-Zsh 的默认配置在 `~/.zshrc` 文件中配置可以配置，修改默�
 > **注意：** 如果配置文件 `~/.zshrc` 不存在则通过手动创建它，默认的配置文件在 [github.com/ohmyzsh/ohmyzsh/blob/templates/zshrc.zsh-template](https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template)。
 
 ```bash
-ZSH_THEME="robbyrussell"  # 默认 zsh 主题
+export ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="robbyrussell"
+plugins=(git autojump zsh-autosuggestions) # 开启常用插件,其中 git 是默认自带，其他两个插件的安装在下面有介绍
+source $ZSH/oh-my-zsh.sh
+
 export UPDATE_ZSH_DAYS=30 # 30天检查更新 zsh 并提示是否更新
 HIST_STAMPS="yyyy-mm-dd"  # 历史记录时间格式
 export LANG=en_US.UTF-8   # 语言
-
-plugins=(git autojump zsh-autosuggestions) # 开启常用插件,其中 git 是默认自带，其他两个插件的安装在下面有介绍
 ```
 
 ## 插件管理
@@ -23,7 +25,7 @@ plugins=(git autojump zsh-autosuggestions) # 开启常用插件,其中 git 是�
 
 > Oh-My-Zsh 自带的插件一般放置在目录 `~/.oh-my-zsh/plugins` 目录下，而通过互联网我们也可以下载更多的插件一般放置在 `~/.oh-my-zsh/custom/plugins` 目录下。
 
-Oh-My-Zsh 默认开启了 `git` 插件，提供了大量 `git` 别名，具体用法参见 [GitHub 地址](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git)
+Oh-My-Zsh 默认开启了 `git` 插件，提供了大量 `git` 别名，具体用法参见 [GitHub 地址](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git/)
 
 ### 安装 autojump 插件
 
