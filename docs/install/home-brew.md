@@ -1,4 +1,4 @@
-# 安装 Homebrew
+# Homebrew
 
 brew 的地址是：[brew zh-cn](https://brew.sh/index_zh-cn)
 

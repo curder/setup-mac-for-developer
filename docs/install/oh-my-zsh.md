@@ -1,4 +1,4 @@
-# 安装 Oh-My-Zsh
+# Oh-My-Zsh
 
 [Oh My Zsh](http://ohmyz.sh/) 的简单配置能让我们快速使用 zsh 这个 SHELL 给开发者带来很多愉悦，节省时间。
 

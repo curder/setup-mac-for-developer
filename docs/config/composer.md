@@ -1,4 +1,4 @@
-# 配置 Composer
+# Composer
 
 ### Composer 源管理工具 [CRM](https://github.com/slince/composer-registry-manager)
 

@@ -1,4 +1,4 @@
-# 配置 mkcert
+# mkcert
 
 ### 初始化配置
 

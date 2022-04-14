@@ -1,4 +1,4 @@
-# 简单配置 iTerm2
+# iTerm2
 
 使用快捷键 `Command + ,` 打开 iTerm2 的设置。
 

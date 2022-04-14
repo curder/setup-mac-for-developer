@@ -1,14 +1,14 @@
-# 安装浏览器
+# 浏览器
 
-### Google Chrome 浏览器
+## Google Chrome 浏览器
 
-#### 通过 homebrew cask
+### 通过 homebrew cask
 
 ```bash
 brew cask install google-chrome
 ```
 
-#### 通过访问网站下载
+### 通过访问网站下载
 
 [Google Chrome](https://chrome.en.softonic.com/mac)
 
@@ -16,15 +16,15 @@ brew cask install google-chrome
 
 [Google Chrome](https://www.google.com/chrome/)
 
-### Firefox 浏览器
+## Firefox 浏览器
 
-#### 通过 homebrew cask
+### 通过 homebrew cask
 
 ```bash
 brew cask install firefox
 ```
 
-#### 通过网站下载
+### 通过网站下载
 
 [Firefox](https://mozilla-firefox.en.softonic.com/mac)
 

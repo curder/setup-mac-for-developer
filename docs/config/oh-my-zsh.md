@@ -1,4 +1,4 @@
-# 简单配置 Oh-My-Zsh
+# Oh-My-Zsh
 
 Oh-My-Zsh 的默认配置在 `~/.zshrc` 文件中配置可以配置，修改默认的基本配置。
 
