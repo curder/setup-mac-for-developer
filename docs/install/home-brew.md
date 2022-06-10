@@ -31,4 +31,6 @@ brew 的地址是：[brew zh-cn](https://brew.sh/index_zh-cn)
 brew install wget
 ```
 
-Homebrew 会将软件包安装到独立目录，并将其文件软链接至 `/usr/local`。
+针对Intel的CPU，Homebrew 会将软件包安装到独立目录，并将其文件软链接至 `/usr/local`。
+
+而苹果自研ARM架构的CPU，Homebrew 会将软件包安装到独立的目录，并将其文件软链接至 `/opt/homebrew`。
