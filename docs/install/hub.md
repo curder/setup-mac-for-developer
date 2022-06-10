@@ -35,6 +35,15 @@ github.com:
   protocol: https
 ```
 
+- 添加git协议
+
+```bash
+git config --global hub.protocol git
+git config --global hub.host github.com
+```
+
+
+
 更多 [配置参考这里](https://hub.github.com/hub.1.html#configuration)。
 
 ## 简单使用
