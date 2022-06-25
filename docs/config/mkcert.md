@@ -94,3 +94,5 @@ server {
     # ...
 }
 ```
+
+[Nginx SSL配置](https://ssl-config.mozilla.org/#server=nginx&version=1.17.7&config=intermediate&openssl=1.1.1k&ocsp=false&guideline=5.6)
