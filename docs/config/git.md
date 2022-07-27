@@ -31,8 +31,8 @@ git config --list # 通过命令查看当前配置
 
 - 忽略文件内容
 
-  ```
-  # .gitignore_global
+  ```bash
+  echo '# .gitignore_global
   ####################################
   ######## OS generated files ########
   ####################################
@@ -48,9 +48,11 @@ git config --list # 通过命令查看当前配置
   .idea/
   node_modules
   .php_cs.cache
+  .phpunit.result.cache
+  __pycache__' > ~/.gitignore_global
   ```
 
-  > 将上面的内容保存到`~/.gitignore_global`文件
+  > 执行完上面的命令后，内容被保存到 `~/.gitignore_global`
 
 - 执行命令使配置文件生效
   ```bash
