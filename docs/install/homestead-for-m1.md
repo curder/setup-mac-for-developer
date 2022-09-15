@@ -1,5 +1,7 @@
 # Apple M1 上安装 Homestead
 
+Homestead 提供了一个统一的 Laravel 开发环境，而无需在本地机器上安装 PHP、Web 服务器和任何其他服务器软件。
+
 ## 前置准备
 
 环境要求：
@@ -98,10 +100,12 @@
 
           ![](./images/homestead-for-m1/vagrant-box-add-homestead-arm.png)
 
+          > 镜像文件被添加到 `~/.vagrant.d/boxes` 目录下
+
         - 执行命令查看是否正常添加
-      ```bash
-      vagrant box list
-      ```
+        ```bash
+        vagrant box list
+        ```
       ![](./images/homestead-for-m1/vagrant-box-list-boxes.png)
 
 ## 启动
@@ -121,6 +125,24 @@ vagrant up homestead # 指定名称
 vagrant ssh
 ssh -i ~/.ssh/id_rsa vagrant@192.168.56.56 # 使用ssh方式登录
 ```
+
+## 卸载
+
+- 卸载 Homestead 虚拟机
+
+```bash
+vagrant destroy homestead
+```
+
+- 删除 Box
+
+```bash
+vagrant box remove laravel/homestead-arm
+```
+
+![](./images/homestead-for-m1/uninstall-homestead.png)
+
+再依次卸载 `Vagrant` 和 `Palallels Desktop 18 for Mac` 即可。
 
 ## Vagrant常用命令
 
