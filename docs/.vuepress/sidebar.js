@@ -13,7 +13,8 @@ module.exports = [
       "composer",
       "hub",
       "redis",
-      "mkcert"
+      "mkcert",
+      "homestead-for-m1"
     ])
   },
   {
