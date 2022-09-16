@@ -9,6 +9,7 @@
 - `Apple M1` 系统
 - 系统版本大于或等于 `macOS Monterey 12`
   ![](./images/homestead-for-m1/show-mac-os-version.png)
+  > 在电脑顶部主菜单的黑苹果图标处点击下拉菜单找到 "关于本机" 处找到当前电脑的系统概览
 
 ## 软件安装
 
