@@ -13,6 +13,6 @@ brew install iterm2
 
 ### 通过访问网站下载
 
-[iTerm2 Download](https://iterm2.com/downloads/stable/latest)
+[Download iTerm2](https://iterm2.com/downloads/stable/latest)
 
-将下载之后的命令解压缩，并将解压缩后的 `.dmg` 文件推送到`/Applications` 目录。
+将下载后的安装包解压缩，并将解压缩后的 `.dmg` 文件移动到`/Applications` 目录。
