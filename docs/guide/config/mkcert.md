@@ -34,7 +34,7 @@ mkcert -key-file ${ssl_path}/${domain}/privkey.pem \
 
 下图是执行成功的一些信息。
 
-![mkcert notification message](./../assets/config/mkcert-notification-message.jpeg)
+![mkcert notification message](images/mkcert/notification-message.jpeg)
 
 
 ### Nginx配置SSL证书
@@ -50,7 +50,7 @@ mkcert -key-file ${ssl_path}/${domain}/privkey.pem \
 7. 点击保存，并重启服务
 8. 如果配置成功一般在列表处会有一把锁
 
-![mkcert notification message](./../assets/config/mamp-apply-ssl-to-protected-website.png)
+![mkcert notification message](images/mkcert/mamp-apply-ssl-to-protected-website.png)
 
 
 ### 在`laravel-mix`项目中使用

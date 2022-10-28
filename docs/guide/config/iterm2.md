@@ -6,7 +6,7 @@
 
 - 快捷键 `Command+,` ->> `Profiles` ->> 选中当前项目名 ->> 选择`Reuse Pevious session's directory`
 
-![](./../assets/config/iterm2-set-resue-previous-session-directory.png)
+![](images/iterm2/set-resue-previous-session-directory.png)
 
 ## 修改字体大小和行间距
 
@@ -14,13 +14,13 @@
 
 字体大小选择为： `16pt`，行间距为：`130%`。
 
-![](./../assets/config/iterm2-set-font-size-and-spacing.png)
+![](images/iterm2/set-font-size-and-spacing.png)
 
 ## 设置快速切换快捷键
 
 - 快捷键 `Command+,` ->> 选择 `Keys` ->> 找到 HotKey，并点击记录你的快捷键，我这里使用的是 **Command + \`**
 
-![](./../assets/config/iterm2-show-or-hiden-all-windows.png)
+![](images/iterm2/show-or-hiden-all-windows.png)
 
 设置好快捷键之后，在任意界面使用快捷键都能快速切换 iTerm2。
 
@@ -34,7 +34,7 @@
 
 在 `/etc/ssh/ssh_config` 文件的末尾，将 `SendEnv LANG LC_*` 使用`#`注释，添加指定的字符集 `SendEnv LANG LC_ALL=en_US.UTF-8`，如下：
 
-``` {2,3}
+```yaml {2,3}
 Host *
         #SendEnv LANG LC_* # 注释默认配置
         SendEnv LANG LC_ALL=en_US.UTF-8 # 添加这一行

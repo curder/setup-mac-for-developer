@@ -8,7 +8,7 @@
 
 - `Apple M1` 系统
 - 系统版本大于或等于 `macOS Monterey 12`
-  ![](./images/homestead-for-m1/show-mac-os-version.png)
+  ![](images/homestead-for-m1/show-mac-os-version.png)
   > 在电脑顶部主菜单的黑苹果图标处点击下拉菜单找到 "关于本机" 处找到当前电脑的系统概览
 
 ## 软件安装
@@ -24,7 +24,7 @@
 
 通过下面的方式验证是否正常：
 
-![Show vagrant version](./images/homestead-for-m1/vagrant-version.png)
+![Show vagrant version](images/homestead-for-m1/vagrant-version.png)
 
 ### Homestead
 
@@ -51,12 +51,15 @@
 
     - 修改 `Homestead.yaml` 文件中的 `provider` 键配置为：`parallels`：
 
-      ```yaml {5}
+      ```yaml {5-7}
       ---
       ip: "192.168.56.56"
       memory: 2048
       cpus: 2
+
       provider: parallels
+      box: laravel/homestead-arm
+      version: 13.0.0
       ```
 
     - 修改 `scripts/homestead.rb` 文件代码逻辑
@@ -79,7 +82,7 @@
 
     - 下载当前最新版本的Box, [v13.0.0](https://app.vagrantup.com/laravel/boxes/homestead-arm/versions/13.0.0)
 
-      ![](./images/homestead-for-m1/download-parallels.png)
+      ![](images/homestead-for-m1/download-parallels.png)
       > 假如下载到本地 `~/Downloads` 目录下，并将下载后命名为 `parallels-homestead-arm.box`
 
     - 使用 `vagrant box add` 添加到 Vagrant
@@ -99,7 +102,7 @@
         ```
         - 执行命令 `vagrant box add metadata.json`
 
-          ![](./images/homestead-for-m1/vagrant-box-add-homestead-arm.png)
+          ![](images/homestead-for-m1/vagrant-box-add-homestead-arm.png)
 
           > 镜像文件被添加到 `~/.vagrant.d/boxes` 目录下
 
@@ -107,7 +110,7 @@
         ```bash
         vagrant box list
         ```
-      ![](./images/homestead-for-m1/vagrant-box-list-boxes.png)
+      ![](images/homestead-for-m1/vagrant-box-list-boxes.png)
 
 ## 启动
 
@@ -118,7 +121,7 @@ vagrant up homestead # 指定名称
 
 使用上面的命令可以启动 vagrant，并在 Parallels Desktop 中看到 Homestead 的镜像，如下图所示：
 
-![](./images/homestead-for-m1/homestead-preview.png)
+![](images/homestead-for-m1/homestead-preview.png)
 
 ## 连接 Homestead 虚拟机
 
@@ -141,7 +144,7 @@ vagrant destroy homestead
 vagrant box remove laravel/homestead-arm
 ```
 
-![](./images/homestead-for-m1/uninstall-homestead.png)
+![](images/homestead-for-m1/uninstall-homestead.png)
 
 再依次卸载 `Vagrant` 和 `Palallels Desktop 18 for Mac` 即可。
 

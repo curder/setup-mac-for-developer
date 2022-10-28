@@ -1,4 +1,4 @@
-# Hub
+# 安装 Hub
 
 Hub 是一个git的命令行拓展，针对于我们经常操作[GitHub](https://github.com)相关任务，例如：创建仓库、克隆仓库等，而无需离开终端。
 

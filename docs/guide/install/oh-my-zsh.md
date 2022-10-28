@@ -1,4 +1,4 @@
-# Oh-My-Zsh
+# 安装 Oh-My-Zsh
 
 [Oh My Zsh](http://ohmyz.sh/) 的简单配置能让我们快速使用 zsh 这个 SHELL 给开发者带来很多愉悦，节省时间。
 
@@ -33,10 +33,10 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 
 安装成功后显示一个如下的欢迎界面
 
-![](./../assets/install/oh-my-zsh-install-information-in-terminal.png)
+![](images/oh-my-zsh/install-information-in-terminal.png)
 
 至此，Oh-My-Zsh 的安装已经完毕。
 
 ## 配置
 
-[简单配置 Oh-My-Zsh](/config/oh-my-zsh.md)
+[简单配置 Oh-My-Zsh](/guide/config/oh-my-zsh)

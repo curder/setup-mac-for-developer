@@ -20,7 +20,7 @@ composer global require slince/composer-registry-manager
 
 通过上面的命令，可以得到命令 `composer repo`
 
-![](./../assets/config/composer-repository-manager-info.png)
+![](images/composer/repository-manager-info.png)
 
 #### 配置 [CRM](https://github.com/slince/composer-registry-manager)
 
@@ -36,7 +36,7 @@ composer repo:ls # 查看所有镜像地址
 composer repo:use $Mirror # 在列表中选择镜像地址，其中 $Mirror 为列表项
 ```
 
-![](./../assets/config/composer-repository-manager-select-aliyun.png)
+![](images/composer/repository-manager-select-aliyun.png)
 
 至此，[CRM](https://github.com/slince/composer-registry-manager) 安装完毕。
 

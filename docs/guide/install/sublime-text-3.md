@@ -1,4 +1,4 @@
-# Sublime Text 3
+# 安装 Sublime Text 3
 
 Sublime Text 3 的[官方网站](https://www.sublimetext.com/)，找到适合自己的平台进行下载并安装。
 
@@ -8,14 +8,14 @@ Sublime Text 3 的[官方网站](https://www.sublimetext.com/)，找到适合自
 brew install homebrew/cask/sublime-text
 ```
 
-![](./../assets/install/sublime-text-3-using-homebrew-installation.png)
+![](images/sublime-text-3/using-homebrew-installation.png)
 
 > 从命令行的提示中可以看出默认已经建立了一个 `subl` 的软连接，后期在使用中可以在命令行直接呼出 sublime text 3。
 
 ## 安装 Package Control
 
 - 在 `Sublime Text 3` 顶级菜单的 `Tools` 下点击 `Install Package Control...`，稍等片刻即可安装成功。如下图：
-  ![](./../assets/install/sublime-text-3-install-package-control.png)
+  ![](images/sublime-text-3/install-package-control.png)
 
 - 使用快捷键`⌘(Command) + ⇧(Shift) + P`，输入 `Install Package Control` 字符后点击回车完成安装。
 

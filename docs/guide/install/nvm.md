@@ -1,4 +1,4 @@
-# nvm | nrm 和 yarn
+# 安装 nvm | nrm 和 yarn
 
 目前主流的 node 版本管理工具有两种，[nvm](https://github.com/creationix/nvm) 和 [n](https://github.com/tj/n)。 两者差异挺大的，具体分析可以参考一下淘宝 FED 团队的一篇文章：[管理 node 版本，选择 nvm 还是 n？](http://taobaofed.org/blog/2015/11/17/nvm-or-n/)。
 

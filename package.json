@@ -1,15 +1,15 @@
 {
   "name": "blog",
-  "version": "1.0.0",
-  "description": "Some articles for laravel study.",
-  "repository": "git@github.com:curder/blog.git",
+  "description": "Setup mac for PHP developer.",
+  "repository": "git@github.com:curder/setup-mac-for-developer.git",
   "author": "curder <q.curder@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "watch": "vuepress dev docs",
-    "prod": "vuepress build docs"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vuepress": "^2.0.0-beta.21"
+    "vitepress": "^1.0.0-alpha.26"
   }
 }

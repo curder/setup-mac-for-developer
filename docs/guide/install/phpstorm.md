@@ -1,4 +1,4 @@
-# PHPStorm
+# 安装 PhpStorm
 
 PhpStorm 的下载请到[官方下载地址](https://www.jetbrains.com/phpstorm/download/download-thanks.html)，默认会选中当前的操作系统平台，点击 **Download** 开始下载。
 
@@ -6,13 +6,13 @@ PhpStorm 的下载请到[官方下载地址](https://www.jetbrains.com/phpstorm/
 
 双击下载好的 `PhpStorm-2018.2.1.dmg` 文件，出现下面的界面
 
-![](./../assets/install/phpstorm-drop-to-applications-install.png)
+![](images/phpstorm/drop-to-applications-install.png)
 
 将 `PhpStorm` 拖拽到右边的 `Applications` 文件夹里。
 
 拖拽完成之后，来到 `Launchpad` 中找到 `PhpStorm` 的图标，单击打开它。
 
-![](./../assets/install/phpstorm-evaluate-for-free.png)
+![](images/phpstorm/evaluate-for-free.png)
 
 如上，这里选择试用 30 天体验。
 
@@ -99,4 +99,4 @@ PhpStorm 的下载请到[官方下载地址](https://www.jetbrains.com/phpstorm/
 
 以上设置全部进行简单的编辑器设置，可以看到如下的预览界面
 
-![](./../assets/install/phpstorm-simple-setting.png)
+![](images/phpstorm/simple-setting.png)
