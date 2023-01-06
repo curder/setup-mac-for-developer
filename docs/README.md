@@ -21,7 +21,7 @@ yarn run docs:build ## 生产
 
 ### 安装
 
-- [Homebrew](guide/install/home-brew)
+- [Homebrew](guide/install/homebrew)
 - [iTerm2](guide/install/iterm2)
 - [安装浏览器](guide/install/browser)
 - [Oh-My-Zsh](guide/install/oh-my-zsh)
@@ -36,7 +36,7 @@ yarn run docs:build ## 生产
 
 ### 配置
 
-- [Homebrew](guide/config/home-brew)
+- [Homebrew](guide/config/homebrew)
 - [iTerm2](guide/config/iterm2)
 - [Oh-My-Zsh](guide/config/oh-my-zsh)
 - [Composer](guide/config/composer)
