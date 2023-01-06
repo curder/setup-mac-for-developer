@@ -16,7 +16,7 @@
 ### Parallels Desktop 18 for Mac
 
 在 [Parallels Desktop 18 for Mac 官方地址](https://www.parallels.com/products/desktop/trial/)下载并安装到 Mac
-电脑。软件默认有 14 天的试用期。
+电脑，软件默认有 14 天的试用期。
 
 ### Vagrant
 
@@ -47,36 +47,26 @@
       vagrant plugin install vagrant-parallels
       ```
       > 由于这里选择的是 Parallels
-      方案，所以将需要安装 [Parallels Vagrant](https://github.com/Parallels/vagrant-parallels) 插件。这个是免费的。
+      方案，所以将需要安装 [Parallels Vagrant](https://github.com/Parallels/vagrant-parallels) 插件，这个插件是免费的。
 
-    - 修改 `Homestead.yaml` 文件中的 `provider` 键配置为：`parallels`：
+    - 修改 `Homestead.yaml` 文件中分别配置：
+      - `provider: parallels`
+      - `box: laravel/homestead-arm`
+      - `version: 13.0.0`：
 
-      ```yaml {5-7}
-      ---
-      ip: "192.168.56.56"
-      memory: 2048
-      cpus: 2
+        ```yaml {5-8}
+        ---
+        ip: "192.168.56.56"
+        memory: 2048
+        cpus: 2
 
-      provider: parallels
-      box: laravel/homestead-arm
-      version: 13.0.0
-      ```
-
-    - 修改 `scripts/homestead.rb` 文件代码逻辑
-      ```text {2}
-      # 修改前
-      config.vm.box = settings['box'] ||= 'laravel/homestead'
-      config.vm.box_version = settings['version'] ||= '>= 12.0.0, < 13.0.0'
-      
-      # 修改后
-      config.vm.box = settings['box'] ||= 'laravel/homestead-arm'
-      config.vm.box_version = settings['version'] ||= '>= 12.0.0, <= 13.0.0'
-      ```
-      > 由于当前下载的 laravel/homestead-arm 为 `13.0.0` 所以需要修改一下版本限定条件
-
+        provider: parallels
+        box: laravel/homestead-arm
+        version: 13.0.0
+        ```
   > 更多Homestead 配置请看 [查看文档](https://laravel.com/docs/9.x/homestead#configuring-homestead)。
 
-- 安装 [laravel/homestead-arm](https://app.vagrantup.com/laravel/boxes/homestead-arm)
+- 下载并安装 [laravel/homestead-arm](https://app.vagrantup.com/laravel/boxes/homestead-arm)
 
   > 这里通过将box下载到本地的方式，在通过路径指定box的形式进行安装，能增加成功率。
 
