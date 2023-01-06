@@ -1,8 +1,8 @@
 # Composer
 
-### Composer 源管理工具 [CRM](https://github.com/slince/composer-registry-manager)
+## Composer 源管理工具 [CRM](https://github.com/slince/composer-registry-manager)
 
-#### 安装
+### 安装
 
 ```bash
 composer global require slince/composer-registry-manager
@@ -22,7 +22,7 @@ composer global require slince/composer-registry-manager
 
 ![](images/composer/repository-manager-info.png)
 
-#### 配置 [CRM](https://github.com/slince/composer-registry-manager)
+### 配置 [CRM](https://github.com/slince/composer-registry-manager)
 
 ```bash
 composer repo:use aliyun
@@ -40,7 +40,7 @@ composer repo:use $Mirror # 在列表中选择镜像地址，其中 $Mirror 为�
 
 至此，[CRM](https://github.com/slince/composer-registry-manager) 安装完毕。
 
-#### 安装报错
+### 安装报错
 
 ```
 Peer's certificate issuer has been marked as not trusted by the user.
@@ -54,13 +54,13 @@ git config --global http.sslVerify false
 
 > 通过设置上面的 git 配置，可以忽略 ssl 的检查。
 
-### 多线程下载 [hirak/prestissimo](https://github.com/hirak/prestissimo)
+## 多线程下载 [hirak/prestissimo](https://github.com/hirak/prestissimo)
 
 ```bash
 composer global require hirak/prestissimo
 ```
 
-### 自动部署工具 [deployer/deployer](https://github.com/deployphp/deployer)
+## 自动部署工具 [deployer/deployer](https://github.com/deployphp/deployer)
 
 ```bash
 composer global require deployer/deployer deployer/recipes curder/deployphp-recipes --no-progress --profile --prefer-dist
@@ -70,7 +70,7 @@ composer global require deployer/deployer deployer/recipes curder/deployphp-reci
 composer global require phpunit/phpunit laravel/installer friendsofphp/php-cs-fixer squizlabs/php_codesniffer --no-progress --profile --prefer-dist
 ```
 
-### 下载全局命令
+## 下载全局命令
 
 ```bash
 composer global require laravel/installer -vvv

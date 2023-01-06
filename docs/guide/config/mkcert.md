@@ -1,12 +1,12 @@
 # mkcert
 
-### 初始化配置
+## 初始化配置
 
 ```bash
 mkcert -install
 ```
 
-### 创建统一存放目录
+## 创建统一存放目录
 
 ```bash
 mkdir -p ~/.certs/ # 创建对应存放目录
@@ -14,7 +14,7 @@ mkdir -p ~/.certs/ # 创建对应存放目录
 ls -l ~/.certs # 查看目录是否存在
 ```
 
-### 生成证书
+## 生成证书
 
 ```bash
 export ssl_path=~/.certs
@@ -37,7 +37,7 @@ mkcert -key-file ${ssl_path}/${domain}/privkey.pem \
 ![mkcert notification message](images/mkcert/notification-message.jpeg)
 
 
-### Nginx配置SSL证书
+## Nginx配置SSL证书
 
 以MAMP客户端为例。
 
@@ -53,7 +53,7 @@ mkcert -key-file ${ssl_path}/${domain}/privkey.pem \
 ![mkcert notification message](images/mkcert/mamp-apply-ssl-to-protected-website.png)
 
 
-### 在`laravel-mix`项目中使用
+## 在`laravel-mix`项目中使用
 
 ```js
 mix.browserSync({
@@ -69,7 +69,7 @@ mix.browserSync({
 >
 > `key` 和 `cert` 的配置跟当前生成证书时指定的文件保持一致。
 
-### 在 Docker nginx 中使用
+## 在 Docker nginx 中使用
 
 在项目的配置文件中添加如下样例代码：
 

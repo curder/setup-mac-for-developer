@@ -2,7 +2,7 @@
 
 Mac 系统自带 git，命令行路径在 `/usr/bin/git`，在编辑器如 PHPStorm 中使用 git 的路径是：`/usr/local/bin/git`。
 
-### 建立 git 软连接
+## 建立 git 软连接
 
 ```bash
 ln -s /usr/bin/git /usr/local/bin/git
@@ -10,9 +10,9 @@ ln -s /usr/bin/git /usr/local/bin/git
 
 > 当然也可以修改 IDE 的 git 路径为默认路径 `/usr/bin/git`。
 
-### 初始化 git 数据
+## 初始化 git 数据
 
-#### 初始化用户信息
+### 初始化用户信息
 
 ```bash
 git config --global user.name <"John Doe">
@@ -27,7 +27,7 @@ git config --global user.email <johndoe@example.com>
 git config --list # 通过命令查看当前配置
 ```
 
-#### 配置 Git 全局忽略文件
+### 配置 Git 全局忽略文件
 
 - 忽略文件内容
 
