@@ -10,6 +10,7 @@ export default defineConfig({
         siteTitle: "MacOS 开发软件安装和配置",
         outlineTitle: "章节导航",
         lastUpdatedText: "最后更新时间",
+        outline: 'deep',
         editLink: {
             pattern: "https://github.com/curder/setup-mac-for-developer/edit/master/docs/:path",
             text: '编辑它'
@@ -30,7 +31,7 @@ function nav() {
         {
             text: 'More',
             items: [
-                {text: 'Laravel Study', link: 'https://curder.github.io/laravel-study/'}
+                {text: 'Laravel 学习', link: 'https://curder.github.io/laravel-study/'}
             ]
         },
     ];
