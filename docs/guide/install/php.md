@@ -28,11 +28,56 @@ brew search php
 
 ### 安装指定版本php
 
-这里以 `php8.2` 为例。
+这里以 `PHP 8.2` 为例。
 
 ```bash
 brew install php@8.2
 ```
+
+也可以安装其他版本的 PHP，比如再安装一个 `PHP 8.1`
+
+```bash
+brew install php@8.1
+```
+
+## PHP 扩展
+
+### [mcrypt](https://pecl.php.net/package/mcrypt)
+
+这里选择使用 [pecl](https://pecl.php.net) 进行安装，安装前先使用 `brew install mcrypt` 再 MacOS 上安装 mcrypt。
+
+确定本机 `pecl` 可执行文件所在路径，比如在 Apple M1 电脑上给 `PHP 8.1` 安装 `mcrypt` 扩展，`pecl` 可执行命令 所在路径大概是：`/opt/homebrew/Cellar/php@8.1/8.1.13/bin/pecl`
+
+```bash
+# 搜索要安装的扩展包
+/opt/homebrew/Cellar/php@8.1/8.1.13/bin/pecl search mcrypt
+
+# 安装
+/opt/homebrew/Cellar/php@8.1/8.1.13/bin/pecl install mcrypt
+# 在安装的过程中需要提供 libmcrypt 前缀
+# 可以通过 `locate libmcrypt` 获取
+## Apple M1 系统上的路径是 `/opt/homebrew/opt/libmcrypt`
+## Intel 系统上的路径是 `/usr/local/opt/libmcrypt`
+
+### 直到编译完毕后出现下面的提示 ###
+# Build process completed successfully
+# Installing '/opt/homebrew/Cellar/php@8.1/8.1.13/pecl/20210902/mcrypt.so'
+# install ok: channel://pecl.php.net/mcrypt-1.0.5
+# Extension mcrypt enabled in php.ini
+
+# 配置
+## 默认情况 php 的默认配置文件中已经加载了 `mcrypt.so` 扩展，也可以这部分配置将它们放在 conf.d/ 目录下统一管理
+## 新建一个配置文件 /opt/homebrew/etc/php/8.1/conf.d/ext-mcrypt.ini
+
+echo <<EOT >> /opt/homebrew/etc/php/8.1/conf.d/ext-mcrypt.ini
+[mcrypt]
+extension=mcrypt.so
+EOT
+
+# 检查
+php -m |grep mcrypt
+```
+
 
 ## [brew-php-switcher](https://github.com/philcook/brew-php-switcher)
 
