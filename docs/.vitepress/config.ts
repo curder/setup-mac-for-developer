@@ -31,7 +31,10 @@ function nav() {
         {
             text: 'More',
             items: [
-                {text: 'Laravel 学习', link: 'https://curder.github.io/laravel-study/'}
+                {text: 'Laravel 学习', link: 'https://curder.github.io/laravel-study/'},
+                {text: 'Python 学习', link: 'https://curder.github.io/python-study/'},
+                {text: 'Scrapy 学习', link: 'https://curder.github.io/scrapy-study/'},
+                {text: 'Yaml 学习', link: 'https://curder.github.io/yaml-study/'},
             ]
         },
     ];
