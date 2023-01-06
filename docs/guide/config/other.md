@@ -48,9 +48,23 @@ alias lsa='ls -lah'
 alias lsof='sudo lsof -nP -iTCP -sTCP:LISTEN | grep '
 alias md='mkdir -p'
 
+alias updatedb='sudo /usr/libexec/locate.updatedb'
+
+# For PHP
+## For PhpUnit
 alias p='vendor/bin/phpunit '
 alias pf='vendor/bin/phpunit --filter '
+## For Pest
+alias pt='vendor/bin/pest '
+alias ptf='vendor/bin/pest --filter '
+## For Laravel
 alias tinker='php artisan tinker'
+alias artisan='php artisan '
+alias sail='bash ./vendor/bin/sail'
+alias php74ssh='php74 artisan deploy:run ssh'
+
+## Ipinfo.io
+alias getip='curl https://ipinfo.io'
 ```
 
 ```bash
