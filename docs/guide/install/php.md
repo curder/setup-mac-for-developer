@@ -46,14 +46,14 @@ brew install php@8.1
 
 这里选择使用 [pecl](https://pecl.php.net) 进行安装，安装前先使用 `brew install mcrypt` 再 MacOS 上安装 mcrypt。
 
-确定本机 `pecl` 可执行文件所在路径，比如在 Apple M1 电脑上给 `PHP 8.1` 安装 `mcrypt` 扩展，`pecl` 可执行命令 所在路径大概是：`/opt/homebrew/Cellar/php@8.1/8.1.13/bin/pecl`
+确定本机 `pecl` 可执行文件所在路径，比如在 Apple M1 电脑上给 `PHP 8.1` 安装 `mcrypt` 扩展，`pecl` 可执行命令 所在路径大概是：`/opt/homebrew/opt/php@8.1/bin/pecl`
 
 ```bash
 # 搜索要安装的扩展包
-/opt/homebrew/Cellar/php@8.1/8.1.13/bin/pecl search mcrypt
+/opt/homebrew/opt/php@8.1/bin/pecl search mcrypt
 
 # 安装
-/opt/homebrew/Cellar/php@8.1/8.1.13/bin/pecl install mcrypt
+/opt/homebrew/opt/php@8.1/bin/pecl install mcrypt
 # 在安装的过程中需要提供 libmcrypt 前缀
 # 可以通过 `locate libmcrypt` 获取
 ## Apple M1 系统上的路径是 `/opt/homebrew/opt/libmcrypt`
@@ -76,6 +76,42 @@ EOT
 
 # 检查
 php -m |grep mcrypt
+```
+
+### [yaml](https://pecl.php.net/package/yaml)
+
+这里选择使用 [pecl](https://pecl.php.net) 进行安装，安装前先使用 `brew install libyaml` 再 MacOS 上安装 libyaml。
+
+确定本机 `pecl` 可执行文件所在路径，比如在 Apple M1 电脑上给 `PHP 8.2` 安装 `libyaml` 扩展，`pecl` 可执行命令 所在路径大概是：`/opt/homebrew/opt/php@8.2/bin/pecl`
+
+```bash
+# 搜索要安装的扩展包
+/opt/homebrew/opt/php@8.2/bin/pecl search yaml 
+
+# 安装
+/opt/homebrew/opt/php@8.2/bin/pecl install yaml
+# 在安装的过程中需要提供 libyaml 前缀
+# 可以通过 `locate libyaml` 获取
+## Apple M1 系统上的路径是 `/opt/homebrew/opt/libyaml`
+## Intel 系统上的路径是 `/usr/local/opt/libyaml`
+
+### 直到编译完毕后出现下面的提示 ###
+# Build process completed successfully
+# Installing '/opt/homebrew/Cellar/php/8.2.1/pecl/20220829/yaml.so'
+# install ok: channel://pecl.php.net/yaml-2.2.2
+# Extension yaml enabled in php.ini
+
+# 配置
+## 默认情况 php 的默认配置文件中已经加载了 `yaml.so` 扩展，也可以这部分配置将它们放在 conf.d/ 目录下统一管理
+## 新建一个配置文件 /opt/homebrew/etc/php/8.2/conf.d/ext-yaml.ini
+
+echo <<EOT >> /opt/homebrew/etc/php/8.2/conf.d/ext-yaml.ini
+[yaml]
+extension=yaml.so
+EOT
+
+# 检查
+php -m |grep yaml
 ```
 
 
