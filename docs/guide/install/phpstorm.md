@@ -1,6 +1,6 @@
 # 安装 PhpStorm
 
-PhpStorm 的下载请到[官方下载地址](https://www.jetbrains.com/phpstorm/download/download-thanks.html)，默认会选中当前的操作系统平台，点击 **Download** 开始下载。
+PhpStorm 的下载请到[官方下载地址](https://www.jetbrains.com/phpstorm/download/)，默认会选中当前的操作系统平台，点击 **Download** 开始下载。
 
 比如，这里下载的是 `PhpStorm-2018.2.1.dmg` 文件。
 
