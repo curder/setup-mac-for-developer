@@ -42,6 +42,11 @@ brew install php@8.1
 
 ## PHP 扩展
 
+安装 [shivammathur/extensions](https://github.com/shivammathur/homebrew-extensions)
+```bash
+brew tap shivammathur/extensions
+```
+
 ### [mcrypt](https://pecl.php.net/package/mcrypt)
 
 这里选择使用 [pecl](https://pecl.php.net) 进行安装，安装前先使用 `brew install mcrypt` 再 MacOS 上安装 mcrypt。
@@ -53,7 +58,7 @@ brew install php@8.1
 /opt/homebrew/opt/php@8.1/bin/pecl search mcrypt
 
 # 安装
-/opt/homebrew/opt/php@8.1/bin/pecl install mcrypt
+arch -arm64 sudo /opt/homebrew/opt/php@8.1/bin/pecl install redis
 # 在安装的过程中需要提供 libmcrypt 前缀
 # 可以通过 `locate libmcrypt` 获取
 ## Apple M1 系统上的路径是 `/opt/homebrew/opt/libmcrypt`
@@ -113,6 +118,57 @@ EOT
 # 检查
 php -m |grep yaml
 ```
+
+### [redis](https://pecl.php.net/package/redis)
+
+选择使用源代码的方式安装最新版 `5.3.7` 的 [redis 扩展](https://pecl.php.net/package/redis)。
+
+下面以 PHP 8.2 安装 redis 扩展为例。
+
+1. 使用 `wget` 下载 `redis-5.3.7.tgz` 压缩包
+
+    ```bash
+    wget https://pecl.php.net/get/redis-5.3.7.tgz
+    ```
+
+2. 解压并进入到目录
+
+    ```bash
+    tar xf redis-5.3.7.tgz && cd redis-5.3.7
+    ```
+   
+3. 执行 `phpize` （根据当前 PHP 版本不同找到对应的可执行文件 `phpize` ）
+
+    ```bash
+    /opt/homebrew/opt/php@8.2/bin/phpize
+    # 执行完毕之后当前目录下生成 configure 文件
+    ```
+
+4. 配置（根据当前 PHP 版本不同找到对应的可执行文件 `php-config`）
+
+   ```
+   ./configure --with-php-config=/opt/homebrew/opt/php@8.2/bin/php-config
+   ```
+
+5. 执行安装
+
+    ```bash
+    make && make install
+    ```
+
+6. 添加扩展
+   ```bash
+    echo <<EOT >> /opt/homebrew/etc/php/8.2/conf.d/ext-redis.ini
+    [redis]
+    extension=redis.so
+    EOT
+    ```
+
+7. 检查
+
+   ```bash
+   php -m |grep yaml
+   ```
 
 
 ## [brew-php-switcher](https://github.com/philcook/brew-php-switcher)
