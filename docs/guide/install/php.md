@@ -1,8 +1,10 @@
-# 安装 PHP（可选）
+# PHP（可选）
 
-> **如果选择使用 MAMP 作为开发环境的话，可以不使用这种方式单独安装 PHP**
+::: info 注意
+**如果选择使用 [MAMP](https://www.mamp.info/en/mamp-pro/mac/)、[Homestead](https://laravel.com/docs/master/homestead) 或 [Sail](https://laravel.com/docs/master/sail) 作为开发环境的话，可以不使用这种方式单独安装 PHP。**
+:::
 
-## 安装PHP
+## PHP
 
 ### 安装 [homebrew-php](https://github.com/shivammathur/homebrew-php) Tap
 
