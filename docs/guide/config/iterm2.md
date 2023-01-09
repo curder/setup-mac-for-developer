@@ -26,6 +26,10 @@
 
 ## 设置正确的SSH连接字符集
 
+sshd 配置文件在 `/etc/ssh/ssh_config`，可以通过对这个文件编写一些自定义配置。
+
+### No such file or directory
+
 当我们需要使用SSH连接远程服务器，会报如下错误：
 
 ::: danger 报错
@@ -40,4 +44,18 @@ Host *
         SendEnv LANG LC_ALL=en_US.UTF-8 # 添加这一行
 ```
 
-相关链接，[查看这里](https://segmentfault.com/a/1190000022755839)
+相关链接[查看这里](https://segmentfault.com/a/1190000022755839)
+
+### 服务端乱码
+
+默认SSH配置链接到服务器上编辑文件时可能出现乱码。
+
+可以禁用 SSH locale 环境变量转发来修复这个错误，在本地计算机上打开 SSH 客户端配置文件 `/etc/ssh/ssh_config`，找到这一行：
+
+```
+SendEnv LANG LC_*
+```
+
+在开头加 `#` 号将其注释掉，保存文件后再次链接服务器查看是否乱码问题解决。
+
+相关链接[查看这里](https://www.linuxbabe.com/linux-server/fix-ssh-locale-environment-variable-error)
