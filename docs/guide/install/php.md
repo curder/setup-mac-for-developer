@@ -142,14 +142,16 @@ php -m |grep yaml
 3. 执行 `phpize` （根据当前 PHP 版本不同找到对应的可执行文件 `phpize` ）
 
     ```bash
-    /opt/homebrew/opt/php@8.2/bin/phpize
+    /opt/homebrew/opt/php@8.2/bin/phpize # M1
+    /usr/local/Cellar/php/8.2.3/bin/phpize # Intel
     # 执行完毕之后当前目录下生成 configure 文件
     ```
 
 4. 配置（根据当前 PHP 版本不同找到对应的可执行文件 `php-config`）
 
    ```
-   ./configure --with-php-config=/opt/homebrew/opt/php@8.2/bin/php-config
+   ./configure --with-php-config=/opt/homebrew/opt/php@8.2/bin/php-config # M1
+   ./configure --with-php-config=/usr/local/Cellar/php/8.2.3/bin/php-config # Intel
    ```
 
 5. 执行安装
@@ -169,7 +171,7 @@ php -m |grep yaml
 7. 检查
 
    ```bash
-   php -m |grep yaml
+   php -m |grep redis
    ```
 
 
