@@ -12,7 +12,7 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
 
-> See: [getcompose v1.10.7](https://getcomposer.org/download/)
+> See: [getcompose v1.10.26](https://getcomposer.org/download/)
 
 ## 移动到全局 bin 路径
 
