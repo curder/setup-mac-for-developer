@@ -24,7 +24,7 @@ sudo mv composer.phar /usr/local/bin/composer
 
 
 
-默认情况下安装的 composer 为 `2.1.11` 的版本。切换到 `1.10.23`
+默认情况下安装的 composer 为 `2.1.11` 的版本。切换到 `1.10.26`
 
 ```bash
 composer self-update --1
