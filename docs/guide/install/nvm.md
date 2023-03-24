@@ -49,16 +49,16 @@ nvm list
 ### 安装指定版本的 NodeJS
 
 ```bash
-nvm install v16.13.0
+nvm install v16.19.1
 ```
 
 ### 指定默认的 NodeJS 版本
 
 ```bash
-nvm alias default v16.13.0 # 指定默认的NodeJS版本
+nvm alias default v16.19.1 # 指定默认的NodeJS版本
 nvm use default
 ```
-> 如果是切换不同版本的node，请确保对应的依赖已经安装，比如`yarn`，因为不同版本的node，对应的bin目录不一致，目录为：`~/.nvm/versions/node/v16.13.0/bin`。
+> 如果是切换不同版本的node，请确保对应的依赖已经安装，比如`yarn`，因为不同版本的node，对应的bin目录不一致，目录为：`~/.nvm/versions/node/v16.19.1/bin`。
 
 ### 查看系统当前使用的 NodeJS 版本
 
@@ -71,7 +71,7 @@ nvm current
 ### 卸载指定的 NodeJS 版本
 
 ```bash
-nvm uninstall v16.13.0 // 卸载v16.13.0
+nvm uninstall v16.19.1 // 卸载v16.19.1
 ```
 
 至此，nvm 相关的基本操作完成，更多的操作请查看[nvm](https://github.com/creationix/nvm)项目的 README 说明。
