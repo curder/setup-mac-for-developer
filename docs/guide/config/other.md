@@ -6,6 +6,32 @@
 touch ~/.hushlogin
 ```
 
+## 设置新的主机名
+
+```bash
+sudo scutil --set HostName <new host name> # sudo scutil --set HostName mac-mini
+```
+
+## 设置本地网络上可用的名称
+
+```bash
+sudo scutil --set LocalHostName <new host name> # sudo scutil --set LocalHostName curder-mac-mini
+```
+
+## 更改计算机名称
+
+这是在 Finder 中看到的用户友好的计算机名称，例如 myMac
+
+```bash
+sudo scutil --set ComputerName <new computer name> # sudo scutil --set ComputerName curder-mac-mini 
+```
+
+## 刷新 DNS 缓存
+
+```bash
+dscacheutil -flushcache
+```
+
 ## 添加命令行快捷方式
 
 ```bash
