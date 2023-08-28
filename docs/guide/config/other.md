@@ -6,6 +6,8 @@
 touch ~/.hushlogin
 ```
 
+> 更多详情[参考这里](http://osxdaily.com/2010/06/22/remove-the-last-login-message-from-the-terminal/)
+
 ## 设置新的主机名
 
 ```bash
@@ -32,7 +34,9 @@ sudo scutil --set ComputerName <new computer name> # sudo scutil --set ComputerN
 dscacheutil -flushcache
 ```
 
-## 添加命令行快捷方式
+## 添加命令行别名
+
+将下面的配置文件写入到 `~/.alias` 文件中，并在 `~/.zshrc` 中通过 `source ~/.alias` 的方式引入。
 
 ```bash
 alias ...='../..'
@@ -77,12 +81,6 @@ alias md='mkdir -p'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 
 # For PHP
-## For PhpUnit
-alias p='vendor/bin/phpunit '
-alias pf='vendor/bin/phpunit --filter '
-## For Pest
-alias pt='vendor/bin/pest '
-alias ptf='vendor/bin/pest --filter '
 ## For Laravel
 alias tinker='php artisan tinker'
 alias artisan='php artisan '
@@ -100,6 +98,34 @@ echo "source ~/.alias" >> ~/.zshrc
 source ~/.zshrc # 重载配置
 ```
 
-将上面的配置文件写入到 `~/.alias` 文件中，并在 `~/.zshrc` 中通过 `source ~/.alias` 的方式引入。
 
-> 更多详情[参考这里](http://osxdaily.com/2010/06/22/remove-the-last-login-message-from-the-terminal/)
+## 添加命令行方法
+
+将下面的配置文件写入到 `~/.functions` 文件中，并在 `~/.zshrc` 中通过 `source ~/.functions` 的方式引入。
+
+```bash
+# phpUnit or pest test
+function p() {
+    if [ -f vendor/bin/pest ]; then
+       vendor/bin/pest "$@"
+    else
+       vendor/bin/phpunit "$@"
+    fi
+}
+
+function pf() {
+    if [ -f vendor/bin/pest ]; then
+       vendor/bin/pest --filter "$@"
+    else
+       vendor/bin/phpunit --filter "$@"
+    fi
+}
+```
+
+
+```bash
+echo "# command functions" >> ~/.zshrc
+echo "source ~/.functions" >> ~/.zshrc
+
+source ~/.zshrc # 重载配置
+```
