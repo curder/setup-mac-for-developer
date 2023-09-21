@@ -39,7 +39,7 @@ composer -V # 查看当前composer版本
 ## 将 Composer 包关联的命令添加到 bin
 
 ```bash
-export PATH="$PATH:$HOME/.composer/vendor/bin" # MacOSX 配置到 `~/.zshrc` 文件
+export PATH="$HOME/.composer/vendor/bin:$PATH" # MacOSX 配置到 `~/.zshrc` 文件
 
-export PATH="$PATH:$HOME/.config/composer/vendor/bin" # CentOS 配置到 `/etc/profile` 文件
+export PATH="$HOME/.config/composer/vendor/bin:$PATH" # CentOS 配置到 `/etc/profile` 文件
 ```
