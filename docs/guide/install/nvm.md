@@ -10,20 +10,30 @@
 
 安装可以参考[nvm](https://github.com/nvm-sh/nvm)项目的 README 文档，可以在下面的命令二选一条在终端执行。
 
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-```
+::: code-group
 
-```bash
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+```bash [国内镜像加速]
+# 使用 wget 命令安装
+wget -qO- https://raw.gitmirror.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# 使用 curl 命令安装
+curl -o- https://raw.gitmirror.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ````
 
-如果安装并配置好了 Oh-My-Zsh 终端的话，默认自动将对应的配置写入了 `~/.zshrc` 文件中，内容为：
+```bash [GitHub]
+# 使用 wget 命令安装
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# 使用 curl 命令安装
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+:::
+
+如果安装并配置好了 Oh-My-Zsh 终端的话，默认自动将对应的配置写入了 `~/.bash_profile`, `~/.zshrc`, `~/.profile` 或 `~/.zshrc` 文件中，内容为：
 
 ```bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
 可以通过命令 `source ~/.zshrc` 加载，或者重新打开一个终端。
