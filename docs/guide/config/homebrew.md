@@ -27,8 +27,11 @@ brew install libzip \
  freetype \
  tree \
  pkg-config \
+ zzz \
  telnet --verbose
 ```
+
+> [`zzz`](https://formulae.brew.sh/formula/zzz) 用于在命令行终端快速将电脑休眠。
 
 ## 解决国内速度慢的问题
 
