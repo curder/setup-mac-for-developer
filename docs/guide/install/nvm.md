@@ -96,13 +96,13 @@ nvm uninstall v16.19.1 // 卸载v16.19.1
 npm install -g nrm
 ```
 
-> 鉴于国内网络环境，如果下载速度慢或者下载失败，建议修改 npm 的从淘宝镜像地址下载资源，可以执行命令：`npm install -g nrm --registry=https://registry.npm.taobao.org/`
+> 鉴于国内网络环境，如果下载速度慢或者下载失败，建议修改 npm 的从淘宝镜像地址下载资源，可以执行命令：`npm install -g nrm --registry=https://registry.npmmirror.com/`
 
 ### 简单使用 nrm
 
 #### 查看可用源
 
-```bash
+```ash
 nrm ls
 ```
 #### 使用指定源
@@ -117,7 +117,7 @@ nrm use taobao
 nrm current
 ```
 
-> 此时，在 `~/.npmrc` 配置中自动配置：`registry=https://registry.npm.taobao.org/`
+> 此时，在 `~/.npmrc` 配置中自动配置：`registry=https://registry.npmmirror.com/`
 
 ## 安装 yarn
 
