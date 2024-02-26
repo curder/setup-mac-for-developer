@@ -115,6 +115,10 @@ alias php74ssh='php74 artisan deploy:run ssh'
 
 ## Ipinfo.io
 alias getip='curl https://ipinfo.io'
+
+# Proxy
+alias proxy="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
+alias unproxy="unset http_proxy;unset https_proxy;unset all_proxy"
 ```
 
 ```bash
