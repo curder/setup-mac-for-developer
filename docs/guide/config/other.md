@@ -45,12 +45,12 @@ sudo scutil --set ComputerName <new computer name> # sudo scutil --set ComputerN
 |------------------------------|--------------------------------------------------------------------------------|
 | MacOS 14 (Sonoma)            | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
 | MacOS 13 (Ventura)           | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
-| macOS 12 (Monterey)          | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
-| macOS 11 (Big Sur)           | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
-| macOS 10.15 (Catalina)       | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
-| macOS 10.14 (Mojave)	        | `sudo killall -HUP mDNSResponder`                                              |
-| macOS 10.13 (High Sierra)    | 	`sudo killall -HUP mDNSResponder`                                             |
-| macOS 10.12 (Sierra)	        | `sudo killall -HUP mDNSResponder`                                              |
+| MacOS 12 (Monterey)          | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
+| MacOS 11 (Big Sur)           | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
+| MacOS 10.15 (Catalina)       | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
+| MacOS 10.14 (Mojave)	        | `sudo killall -HUP mDNSResponder`                                              |
+| MacOS 10.13 (High Sierra)    | 	`sudo killall -HUP mDNSResponder`                                             |
+| MacOS 10.12 (Sierra)	        | `sudo killall -HUP mDNSResponder`                                              |
 | OS X 10.11 (El Capitan)	     | `sudo killall -HUP mDNSResponder`                                              |
 | OS X 10.10 (Yosemite)        | 	`sudo discoveryutil udnsflushcaches`                                          |
 | OS X 10.9 (Mavericks)        | 	`sudo killall -HUP mDNSResponder`                                             |
@@ -105,6 +105,7 @@ alias lsof='sudo lsof -nP -iTCP -sTCP:LISTEN | grep '
 alias md='mkdir -p'
 
 alias updatedb='sudo /usr/libexec/locate.updatedb'
+alias refreshdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
 # For PHP
 ## For Laravel
