@@ -8,6 +8,17 @@ touch ~/.hushlogin
 
 > 更多详情[参考这里](http://osxdaily.com/2010/06/22/remove-the-last-login-message-from-the-terminal/)
 
+## 启用简单密码
+
+从 Mac 10.14 Mojave 开始，Mac 的密码就要求复杂，如果想设置简短一点的密码，可以使用下面的命令行终端命令开启它。
+
+1. 打开终端，比如系统自带的 `Terminal` 或 `iTerm2`
+2. 输入命令 `pwpolicy -clearaccountpolicies` 回车后输入当前密码
+   > 如果执行完上面的命令后提示 `This tool does not update the login keychain password.`（比如 Mac 14.2 系统就会有这个提示）， 则可以根据提示中的命令 `security set-keychain-password` 执行并修改 KeyChain 的密码。
+3. 显示 `Clearing global account policies` 提示表示成功启用
+4. 输入 `passwd` 按回车来变更当前账户密码
+
+
 ## 设置新的主机名
 
 ```bash
