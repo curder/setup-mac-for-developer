@@ -41,9 +41,24 @@ sudo scutil --set ComputerName <new computer name> # sudo scutil --set ComputerN
 
 ## 刷新 DNS 缓存
 
-```bash
-dscacheutil -flushcache
-```
+| MacOS 版本                     | 命令                                                                             |
+|------------------------------|--------------------------------------------------------------------------------|
+| MacOS 14 (Sonoma)            | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
+| MacOS 13 (Ventura)           | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
+| macOS 12 (Monterey)          | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
+| macOS 11 (Big Sur)           | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
+| macOS 10.15 (Catalina)       | <small>`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`</small> |
+| macOS 10.14 (Mojave)	        | `sudo killall -HUP mDNSResponder`                                              |
+| macOS 10.13 (High Sierra)    | 	`sudo killall -HUP mDNSResponder`                                             |
+| macOS 10.12 (Sierra)	        | `sudo killall -HUP mDNSResponder`                                              |
+| OS X 10.11 (El Capitan)	     | `sudo killall -HUP mDNSResponder`                                              |
+| OS X 10.10 (Yosemite)        | 	`sudo discoveryutil udnsflushcaches`                                          |
+| OS X 10.9 (Mavericks)        | 	`sudo killall -HUP mDNSResponder`                                             |
+| OS X 10.8 (Mountain Lion)    | 	`sudo killall -HUP mDNSResponder`                                             |
+| Mac OS X 10.7 (Lion)         | 	`sudo killall -HUP mDNSResponder`                                             |
+| Mac OS X 10.6 (Snow Leopard) | 	`sudo dscacheutil -flushcache`                                                |
+| Mac OS X 10.5 (Leopard)      | 	`sudo lookupd -flushcache`                                                    |
+| Mac OS X 10.4 (Tiger)        | 	`lookupd -flushcache`                                                         |
 
 ## 添加命令行别名
 
