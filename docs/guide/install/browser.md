@@ -1,4 +1,4 @@
-# 浏览器
+# Browsers
 
 MacOS 自带的浏览器是 [Safari](https://www.apple.com.cn/safari/)，但是依然推荐下载 [Chrome](https://www.google.com/chrome/)、[Firefox](https://www.mozilla.org/zh-CN/firefox/)、[Arc](https://arc.net/)、[Brave](https://brave.com/) 等现代浏览器作为平时开发中使用。
 

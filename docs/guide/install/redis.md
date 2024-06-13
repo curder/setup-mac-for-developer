@@ -1,25 +1,19 @@
-# 安装 Redis（可选）
+# Redis
 
-> **如果选择使用 MAMP 作为开发环境的话，可以不用使用这种方式单独安装 Redis**
+Redis 作为最流程的内存数据库，在开发和生产环境中都得到了广泛的应用。
 
-```bash
-brew install redis
-```
+## 安装 DBngin
 
-## 配置开机自启动
+[DBngin](https://dbngin.com/) 是一个数据库管理工具，它可以帮助启动 Redis，同时它也能快速的启动 MySQL 和 PostgreSQL。
 
 ```bash
-ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
+brew install --cask dbngin
 ```
 
 ## 启动 Redis
 
-```bash
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
-```
+打开 DBngin，点击添加一个 Redis 服务，版本选择 7.0.0，然后点击启动。
 
-## 测试
 
-```bash
-redis-cli ping # 执行完这个命令后返回 PONG 字样则表示安装成功
-```
+![](images/redis/create-new-database-server-for-redis.png)
+

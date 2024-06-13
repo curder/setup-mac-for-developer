@@ -1,4 +1,4 @@
-# 安装 Oh-My-Zsh
+# Oh-My-Zsh
 
 [Oh My Zsh](http://ohmyz.sh/) 能给开发者带来很多愉悦，节省时间。
 

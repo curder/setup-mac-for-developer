@@ -49,27 +49,25 @@ function sidebarGuide() {
                 {text: "1. Homebrew", link: '/guide/install/homebrew'},
                 {text: "2. iTerm2", link: "/guide/install/iterm2"},
                 {text: "3. Oh-My-Zsh", link: "/guide/install/oh-my-zsh"},
-                {text: "4. 浏览器", link: "/guide/install/browser"},
+                {text: "4. Browsers", link: "/guide/install/browser"},
                 {text: "5. Sublime Text", link: "/guide/install/sublime-text"},
                 {text: "6. PHPStorm", link: "/guide/install/phpstorm"},
-                {text: "nvm | nrm 和 yarn", link: "/guide/install/nvm"},
-                {text: "PHP（可选）", link: "/guide/install/php"},
-                {text: "Composer", link: "/guide/install/composer"},
-                {text: "Hub", link: "/guide/install/hub"},
-                {text: "Redis（可选）", link: "/guide/install/redis"},
-                {text: "mkcert（可选）", link: "/guide/install/mkcert"},
-                {text: "Apple M1 上安装 Homestead", link: "/guide/install/homestead-for-m1"},
+                {text: "7. Herd", link: "/guide/install/herd"},
+                {text: "8. Redis", link: "/guide/install/redis"},
+                {text: "9. Others", link: "/guide/install/others"},
             ]
         },
         {
-            text: '软件配置',
-            collapsible: false,
+            text: '选装',
+            collapsible: true,
             items: [
-                {text: "配置 Composer", link: "/guide/config/composer"},
-                {text: "配置 Git", link: "/guide/config/git"},
-                {text: "配置 mkcert", link: "/guide/config/mkcert"},
-                {text: "其他", link: "/guide/config/other"},
+                {text: "PHP", link: "/guide/install/php"},
+                {text: "Node", link: "/guide/install/nvm"},
+                {text: "Composer", link: "/guide/install/composer"},
+                {text: 'Hub', link: "/guide/install/hub"},
+                {text: "mkcert", link: "/guide/install/mkcert"},
+                {text: "Homestead", link: "/guide/install/homestead-for-m1"},
             ]
-        },
+        }
     ]
 }

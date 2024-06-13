@@ -1,7 +1,7 @@
 # PHP（可选）
 
-::: info 注意
-**如果选择使用 [MAMP](https://www.mamp.info/en/mamp-pro/mac/)、[Homestead](https://laravel.com/docs/master/homestead) 或 [Sail](https://laravel.com/docs/master/sail) 作为开发环境的话，可以不使用这种方式单独安装 PHP。**
+::: warning 注意
+**如果选择使用 [MAMP](https://www.mamp.info/en/mamp-pro/mac/)、[Herd](https://herd.laravel.com/)、[Homestead](https://laravel.com/docs/master/homestead) 或 [Sail](https://laravel.com/docs/master/sail) 作为开发环境的话，可以不使用这种方式单独安装 PHP。**
 :::
 
 ## PHP

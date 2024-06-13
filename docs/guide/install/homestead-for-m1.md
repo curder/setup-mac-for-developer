@@ -1,4 +1,4 @@
-# Apple M1 上安装 Homestead
+# Homestead for M1
 
 [Homestead](https://laravel.com/docs/homestead) 提供了一个统一的 Laravel 开发环境，而无需在本地机器上安装 PHP、Web 服务器和任何其他服务器软件。
 
