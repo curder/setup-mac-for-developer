@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/curder/setup-mac-for-developer/actions/workflows/build-docs.yml/badge.svg)](https://github.com/curder/setup-mac-for-developer/actions?query=build-docs%3Amaster)
 
-> 注意：演示安装的 Mac 版本为 **10.13.6**
+> 注意：演示安装的 Mac 版本为 **14.2.1**
 
 - github.io 地址：[curder/setup-mac-for-developer](https://curder.github.io/setup-mac-for-developer)
 - github 源代码地址：[curder/setup-mac-for-developer](https://github.com/curder/setup-mac-for-developer)
