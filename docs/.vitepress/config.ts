@@ -43,10 +43,10 @@ function nav() {
 function sidebarGuide() {
     return [
         {
-            text: '软件安装',
+            text: '',
             collapsible: false,
             items: [
-                {text: "Homebrew", link: '/guide/install/homebrew'},
+                {text: "1. Homebrew", link: '/guide/install/homebrew'},
                 {text: "iTerm2", link: "/guide/install/iterm2"},
                 {text: "浏览器", link: "/guide/install/browser"},
                 {text: "Oh-My-Zsh", link: "/guide/install/oh-my-zsh"},
@@ -65,7 +65,6 @@ function sidebarGuide() {
             text: '软件配置',
             collapsible: false,
             items: [
-                {text: "Homebrew 安装依赖", link: "/guide/config/homebrew"},
                 {text: "配置 iTerm2", link: "/guide/config/iterm2"},
                 {text: "配置 Oh-My-Zsh", link: "/guide/config/oh-my-zsh"},
                 {text: "配置 Composer", link: "/guide/config/composer"},
