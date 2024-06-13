@@ -48,8 +48,8 @@ function sidebarGuide() {
             items: [
                 {text: "1. Homebrew", link: '/guide/install/homebrew'},
                 {text: "2. iTerm2", link: "/guide/install/iterm2"},
-                {text: "3. 浏览器", link: "/guide/install/browser"},
-                {text: "Oh-My-Zsh", link: "/guide/install/oh-my-zsh"},
+                {text: "3. Oh-My-Zsh", link: "/guide/install/oh-my-zsh"},
+                {text: "4. 浏览器", link: "/guide/install/browser"},
                 {text: "Sublime Text 3", link: "/guide/install/sublime-text-3"},
                 {text: "PHPStorm", link: "/guide/install/phpstorm"},
                 {text: "nvm | nrm 和 yarn", link: "/guide/install/nvm"},
