@@ -12,7 +12,7 @@ export default defineConfig({
             text: "最后更新时间"
         },
         outline: {
-            label: "",
+            label: "章节导航",
             level: 'deep'
         },
         editLink: {
@@ -50,7 +50,7 @@ function sidebarGuide() {
                 {text: "2. iTerm2", link: "/guide/install/iterm2"},
                 {text: "3. Oh-My-Zsh", link: "/guide/install/oh-my-zsh"},
                 {text: "4. 浏览器", link: "/guide/install/browser"},
-                {text: "Sublime Text 3", link: "/guide/install/sublime-text-3"},
+                {text: "5. Sublime Text", link: "/guide/install/sublime-text"},
                 {text: "PHPStorm", link: "/guide/install/phpstorm"},
                 {text: "nvm | nrm 和 yarn", link: "/guide/install/nvm"},
                 {text: "PHP（可选）", link: "/guide/install/php"},
@@ -65,7 +65,6 @@ function sidebarGuide() {
             text: '软件配置',
             collapsible: false,
             items: [
-                {text: "配置 Oh-My-Zsh", link: "/guide/config/oh-my-zsh"},
                 {text: "配置 Composer", link: "/guide/config/composer"},
                 {text: "配置 Git", link: "/guide/config/git"},
                 {text: "配置 mkcert", link: "/guide/config/mkcert"},
