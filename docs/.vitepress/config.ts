@@ -8,9 +8,13 @@ export default defineConfig({
     lastUpdated: true,
     themeConfig: {
         siteTitle: "MacOS 开发软件安装和配置",
-        outlineTitle: "章节导航",
-        lastUpdatedText: "最后更新时间",
-        outline: 'deep',
+        lastUpdated: {
+            text: "最后更新时间"
+        },
+        outline: {
+            label: "",
+            level: 'deep'
+        },
         editLink: {
             pattern: "https://github.com/curder/setup-mac-for-developer/edit/master/docs/:path",
             text: '编辑它'
@@ -18,27 +22,23 @@ export default defineConfig({
         socialLinks: [
             {icon: 'github', link: 'https://github.com/curder/setup-mac-for-developer'}
         ],
-        nav: nav(),
+        nav: [
+            {text: 'Guide', link: '/guide/install/homebrew', activeMatch: '/guide/install'},
+            {
+                // text: 'More',
+                items: [
+                    {text: 'Laravel 学习', link: 'https://curder.github.io/laravel-study/'},
+                    {text: 'Python 学习', link: 'https://curder.github.io/python-study/'},
+                    {text: 'Scrapy 学习', link: 'https://curder.github.io/scrapy-study/'},
+                    {text: 'Yaml 学习', link: 'https://curder.github.io/yaml-study/'},
+                ]
+            },
+        ],
         sidebar: {
             '/guide/': sidebarGuide(),
         },
     }
 });
-
-function nav() {
-    return [
-        {text: 'Guide', link: '/guide/install/homebrew', activeMatch: '/guide/install'},
-        {
-            text: 'More',
-            items: [
-                {text: 'Laravel 学习', link: 'https://curder.github.io/laravel-study/'},
-                {text: 'Python 学习', link: 'https://curder.github.io/python-study/'},
-                {text: 'Scrapy 学习', link: 'https://curder.github.io/scrapy-study/'},
-                {text: 'Yaml 学习', link: 'https://curder.github.io/yaml-study/'},
-            ]
-        },
-    ];
-}
 
 function sidebarGuide() {
     return [
@@ -48,7 +48,7 @@ function sidebarGuide() {
             items: [
                 {text: "1. Homebrew", link: '/guide/install/homebrew'},
                 {text: "2. iTerm2", link: "/guide/install/iterm2"},
-                {text: "浏览器", link: "/guide/install/browser"},
+                {text: "3. 浏览器", link: "/guide/install/browser"},
                 {text: "Oh-My-Zsh", link: "/guide/install/oh-my-zsh"},
                 {text: "Sublime Text 3", link: "/guide/install/sublime-text-3"},
                 {text: "PHPStorm", link: "/guide/install/phpstorm"},
