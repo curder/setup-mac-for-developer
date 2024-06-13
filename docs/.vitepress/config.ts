@@ -51,7 +51,7 @@ function sidebarGuide() {
                 {text: "3. Oh-My-Zsh", link: "/guide/install/oh-my-zsh"},
                 {text: "4. 浏览器", link: "/guide/install/browser"},
                 {text: "5. Sublime Text", link: "/guide/install/sublime-text"},
-                {text: "PHPStorm", link: "/guide/install/phpstorm"},
+                {text: "6. PHPStorm", link: "/guide/install/phpstorm"},
                 {text: "nvm | nrm 和 yarn", link: "/guide/install/nvm"},
                 {text: "PHP（可选）", link: "/guide/install/php"},
                 {text: "Composer", link: "/guide/install/composer"},

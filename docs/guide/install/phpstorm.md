@@ -2,11 +2,11 @@
 
 PhpStorm 的下载请到[官方下载地址](https://www.jetbrains.com/phpstorm/download/)，默认会选中当前的操作系统平台，点击 **Download** 开始下载。
 
-比如，这里下载的是 `PhpStorm-2018.2.1.dmg` 文件。
+比如，这里下载的是 `PhpStorm-2024.1.3-aarch64.dmg` 文件。
 
-双击下载好的 `PhpStorm-2018.2.1.dmg` 文件，出现下面的界面
+双击下载好的安装包，出现下面的界面
 
-![](images/phpstorm/drop-to-applications-install.png)
+![](images/phpstorm/drop-to-applications-folder.png)
 
 将 `PhpStorm` 拖拽到右边的 `Applications` 文件夹里。
 
