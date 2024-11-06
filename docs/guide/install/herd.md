@@ -1,6 +1,6 @@
 # Herd
 
-Herd 是一款速度超快的原生 Laravel 和 PHP 开发环境，适用于 macOS。它提供了开始使用 Laravel 开发所需的一切。它附带 PHP 、nginx、dnsmasq和Node.js。
+Herd 是一款速度超快的原生 Laravel 和 PHP 开发环境，适用于 macOS。它提供了开始使用 Laravel 开发所需的一切。它附带 PHP、nginx、dnsmasq、laravel、composer 和 Node.js。
 
 ## 安装
 
@@ -8,6 +8,9 @@ Herd 是一款速度超快的原生 Laravel 和 PHP 开发环境，适用于 mac
 
 ```bash
 brew install --cask herd
+
+# 或者使用下面的命令
+/bin/bash -c "$(curl -fsSL https://php.new/install/mac)"
 ```
 
 安装完成并启动 Herd，支持如下可执行脚本：
