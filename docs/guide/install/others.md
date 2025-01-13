@@ -1,4 +1,4 @@
-# Others
+install/others.md# Others
 
 ## git
 
@@ -116,7 +116,7 @@ sudo scutil --set ComputerName <new computer name> # sudo scutil --set ComputerN
 
 ## 添加命令行别名
 
-将下面的配置文件写入到 `~/.alias` 文件中，并在 `~/.zshrc` 中通过 `source ~/.alias` 的方式引入。
+将下面的配置文件写入到 `$HOME/.config/zsh/alias.zsh` 文件中，并在 `~/.zshrc` 中通过 `source $HOME/.config/zsh/alias.zsh` 的方式引入。
 
 ```bash
 alias ...='../..'
@@ -177,8 +177,9 @@ alias unproxy="unset http_proxy;unset https_proxy;unset all_proxy"
 ```
 
 ```bash
-echo "# command alias" >> ~/.zshrc
-echo "source ~/.alias" >> ~/.zshrc
+echo "# Aliases" >> ~/.zshrc
+
+echo '[ -f "$HOME/.config/zsh/alias.zsh"] && source "$HOME/.config/zsh/alias.zsh"' >> ~/.zshrc
 
 source ~/.zshrc # 重载配置
 ```
@@ -186,7 +187,7 @@ source ~/.zshrc # 重载配置
 
 ## 添加命令行方法
 
-将下面的配置文件写入到 `~/.functions` 文件中，并在 `~/.zshrc` 中通过 `source ~/.functions` 的方式引入。
+将下面的配置文件写入到 `$HOME/.config/zsh/functions.zsh` 文件中，并在 `~/.zshrc` 中通过 `source $HOME/.config/zsh/functions.zsh` 的方式引入。
 
 ```bash
 # phpUnit or pest test
@@ -209,8 +210,8 @@ function pf() {
 
 
 ```bash
-echo "# command functions" >> ~/.zshrc
-echo "source ~/.functions" >> ~/.zshrc
+echo "# Functions" >> ~/.zshrc
+echo "source $HOME/.config/zsh/functions.zsh" >> ~/.zshrc
 
 source ~/.zshrc # 重载配置
 ```
