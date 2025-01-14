@@ -52,7 +52,7 @@ git config --global hub.host github.com
 
 - 下载仓库
 ```bash
-git clone curder/setup-mac-for-developer-src
+git clone curder/setup-mac-for-developer
 ```
 
 - 创建仓库
