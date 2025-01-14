@@ -177,7 +177,7 @@ alias unproxy="unset http_proxy;unset https_proxy;unset all_proxy"
 ```bash
 echo "# Aliases" >> ~/.zshrc
 
-echo '[ -f "$HOME/.config/zsh/alias.zsh"] && source "$HOME/.config/zsh/alias.zsh"' >> ~/.zshrc
+echo '[ -f "$HOME/.config/zsh/alias.zsh" ] && source "$HOME/.config/zsh/alias.zsh"' >> ~/.zshrc
 
 source ~/.zshrc # 重载配置
 ```
@@ -209,7 +209,7 @@ function pf() {
 
 ```bash
 echo "# Functions" >> ~/.zshrc
-echo "source $HOME/.config/zsh/functions.zsh" >> ~/.zshrc
+echo '[ -f "$HOME/.config/zsh/functions.zsh" ] && source "$HOME/.config/zsh/functions.zsh"' >> ~/.zshrc
 
 source ~/.zshrc # 重载配置
 ```
