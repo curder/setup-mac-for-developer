@@ -1,5 +1,3 @@
-install/others.md# Others
-
 ## git
 
 ### 初始化用户信息
