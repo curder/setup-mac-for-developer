@@ -117,6 +117,7 @@ sudo scutil --set ComputerName <new computer name> # sudo scutil --set ComputerN
 将下面的配置文件写入到 `$HOME/.config/zsh/alias.zsh` 文件中，并在 `~/.zshrc` 中通过 `source $HOME/.config/zsh/alias.zsh` 的方式引入。
 
 ```bash
+# paths
 alias ...='../..'
 alias ....='../../..'
 alias .....='../../../..'
@@ -167,11 +168,16 @@ alias sail='bash ./vendor/bin/sail'
 alias php74ssh='php74 artisan deploy:run ssh'
 
 ## Ipinfo.io
-alias getip='curl https://ipinfo.io'
+alias getip='curl https://ipinfo.io/'
 
 # Proxy
 alias proxy="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
 alias unproxy="unset http_proxy;unset https_proxy;unset all_proxy"
+
+# Zzz
+alias z="Zzz"
+alias zz="Zzz"
+alias zzz="Zzz"
 ```
 
 ```bash
