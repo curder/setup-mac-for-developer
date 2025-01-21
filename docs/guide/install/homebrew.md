@@ -10,20 +10,22 @@
 
 ## 系统依赖
 
-- 64 位 Intel CPU 或 Apple Silicon CPU
-- MacOSX 版本大于 10.12
-- Xcode 的命令行工具 `xcode-select --install` [developer.apple.com/downloads](https://developer.apple.com/downloads) 或者 [Xcode](https://itunes.apple.com/us/app/xcode/id497799835)
-- 使用 `bash` 或者 `zsh` 终端进行安装
+在安装 Homebrew 之前需要安装 `Xcode Command Line Tools`，使用命令：
 
-安装前可能涉及到需要安装`Xcode Command Line Tools`
 
-在执行命令的时候会一直停留在这行提示上，`Downloading Command Line Tools (macOS High Sierra version 10.13) for Xcode`。需要耐心等待，如果失败了也可以在 Apple 官网下载`.dmg`文件进行安装。
+```bash
+xcode-select --install
+```
+
+在执行命令的时候会一直停留在这行提示上，`Downloading Command Line Tools (macOS High Sierra version 10.13) for Xcode`。
+
+需要耐心等待，如果失败了也可以在 Apple 官网下载`.dmg`文件进行安装。
 
 ![](images/homebrew/xcode-command-line-tools.png)
 
 ## 安装
 
-在命令行终端执行下面的命令安装 homebrew。
+在命令行终端执行下面的命令安装 Homebrew。
 
 ::: code-group
 ```bash [从阿里云镜像安装]
