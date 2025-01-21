@@ -26,14 +26,19 @@
 在命令行终端执行下面的命令安装 homebrew。
 
 ::: code-group
-```bash [从阿里云镜像安装 homebrew]
-# 从阿里云下载安装脚本并安装 Homebrew 
+```bash [从阿里云镜像安装]
+# 从 Aliyun 下载安装脚本并安装 Homebrew 
 git clone https://mirrors.aliyun.com/homebrew/install.git brew-install
 /bin/bash brew-install/install.sh
 rm -rf brew-install
 ```
 
-```bash [使用 GitHub 地址下载 homebrew]
+```bash [使用 Gitee 地址下载]
+# 从 Gitee 下载中文安装脚本并安装 Homebrew
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+```
+
+```bash [使用 GitHub 地址下载]
 # 从 GitHub 获取官方安装脚本安装 Homebrew 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
@@ -46,6 +51,24 @@ rm -rf brew-install
 ```bash
 brew -v
 ```
+
+## 常用命令
+
+使用下面的常用命令命令对软件进行管理和维护。
+
+| 命令 | 说明 |
+| ---- | ---- |
+| `brew update` | 更新 Homebrew |
+| `brew list` | 查看已安装软件包 |
+| `brew outdated` | 查看已过时软件包 |
+| `brew search packageName` | 搜索软件包 |
+| `brew install packageName` | 安装软件包 |
+| `brew upgrade packageName` | 更新软件包 |
+| `brew info packageName` | 查看软件包信息 |
+| `brew uninstall packageName` | 卸载软件包 |
+| `brew install --cask packageName` | 安装 cask 软件 |
+| `brew uninstall --cask packageName` | 卸载 cask 软件 |
+
 
 ## 设置镜像源
 
