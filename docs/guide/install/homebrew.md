@@ -168,7 +168,6 @@ brew install libzip \
  readline \
  postgresql \
  libxml2 \
- mcrypt \
  gettext \
  libxslt \
  libiconv \
