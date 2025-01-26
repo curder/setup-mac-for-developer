@@ -70,7 +70,7 @@ touch ~/.hushlogin
 2. 输入命令 `pwpolicy -clearaccountpolicies` 回车后输入当前密码
    > 如果执行完上面的命令后提示 `This tool does not update the login keychain password.`（比如 Mac 14.2 系统就会有这个提示）， 则可以根据提示中的命令 `security set-keychain-password` 执行并修改 KeyChain 的密码。
 3. 显示 `Clearing global account policies` 提示表示成功启用
-4. 输入 `passwd` 按回车来变更当前账户密码
+4. 输入 `passwd` 按回车来变更当前账户密码（MacOS 15 版本的系统使用 `security set-keychain-passwor` 命令更新密码）
 
 
 ## 设置新的主机名
