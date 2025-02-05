@@ -2,6 +2,23 @@
 
 ## git
 
+### 初始化目录
+
+```bash
+mkdir -p ~/.config/git
+touch ~/.config/git/.gitconfig && ln -s ~/.config/git/.gitconfig ~/.gitconfig
+touch ~/.config/git/.gitignore_global
+```
+
+### 忽略大小写
+
+默认情况下，MacOS对[文件的大小写](https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreignoreCase)是不敏感的。
+
+```bash
+git config --global core.ignorecase # 查看忽略大小写
+git config --global core.ignorecase true # 设置为忽略大小写
+```
+
 ### 初始化用户信息
 
 ```bash
@@ -42,11 +59,11 @@ git config --list # 通过命令查看当前配置
   __pycache__' > ~/.gitignore_global
   ```
 
-  > 执行完上面的命令后，内容被保存到 `~/.gitignore_global`
+  > 执行完上面的命令后，内容被保存到 `~/.config/git/.gitignore_global`
 
 - 执行命令使配置文件生效
   ```bash
-  git config --global core.excludesfile ~/.gitignore_global
+  git config --global core.excludesfile ~/.config/git/.gitignore_global
   ```
 
 - 执行命令检查配置是否生效
