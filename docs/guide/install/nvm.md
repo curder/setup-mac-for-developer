@@ -102,7 +102,7 @@ npm install -g nrm
 
 #### 查看可用源
 
-```ash
+```bash
 nrm ls
 ```
 #### 使用指定源
