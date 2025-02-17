@@ -53,6 +53,7 @@ git config --list # 通过命令查看当前配置
   ehthumbs.db
   Thumbs.db
   .idea/
+  .vscode/
   node_modules
   .php_cs.cache
   .phpunit.result.cache
