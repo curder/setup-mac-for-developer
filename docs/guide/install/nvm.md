@@ -121,10 +121,20 @@ nrm current
 
 ## 安装 yarn
 
-[参考这里](https://yarn.bootcss.com/docs/install/#mac-stable)
+[`yarn`](https://yarnpkg.com/) 是一个快速、可靠、安全的依赖管理工具。
+
+```bash
 
 ```bash
 npm -g install yarn
+```
+
+## 安装 bun
+
+[`bun`](https://bun.sh/) 是一个用于快速创建项目的脚手架工具。
+
+```shell
+npm -g install bun
 ```
 
 ## 安装全局依赖
