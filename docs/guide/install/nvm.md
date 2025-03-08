@@ -14,18 +14,18 @@
 
 ```bash [国内镜像加速]
 # 使用 wget 命令安装
-wget -qO- https://raw.gitmirror.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+wget -qO- https://raw.gitmirror.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
 # 使用 curl 命令安装
-curl -o- https://raw.gitmirror.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.gitmirror.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 ````
 
 ```bash [GitHub]
 # 使用 wget 命令安装
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
 # 使用 curl 命令安装
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 ```
 :::
 
