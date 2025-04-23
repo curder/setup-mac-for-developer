@@ -122,13 +122,45 @@ nrm current
 
 > 此时，在 `~/.npmrc` 配置中自动配置：`registry=https://registry.npmmirror.com/`
 
-## 安装 yarn
+## yarn
+
+### 安装
 
 [`yarn`](https://yarnpkg.com/) 是一个快速、可靠、安全的依赖管理工具。
 
 ```shell
 npm -g install yarn
 ```
+
+### [nrm](https://github.com/i5ting/yrm)
+
+`yrm` 是 `yarn` 镜像仓库管理命令，可以帮助我们管理 `yarn` 镜像资源的下载地址。
+
+```shell
+npm install -g yrm
+```
+
+> 鉴于国内网络环境，如果下载速度慢或者下载失败，建议修改 npm 的从淘宝镜像地址下载资源，可以执行命令：`npm install -g yrm --registry=https://registry.npmmirror.com/`
+
+#### 查看可用源
+
+```shell
+yrm ls
+```
+
+#### 使用指定源
+
+```shell
+yrm use taobao
+```
+
+#### 检查当前使用源
+
+```shell
+yrm current
+```
+
+> 此时，在 `~/.yarnrc` 配置中自动配置：`registry "https://registry.npm.taobao.org/"` 和 `~/.npmrc` 配置中自动配置：`registry=https://registry.npmmirror.com/`。
 
 ## 安装 bun
 
