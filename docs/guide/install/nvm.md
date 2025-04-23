@@ -6,32 +6,33 @@
 
 ## 安装 nvm
 
-> **安装前请保证电脑已经正确安装并配置好了Oh-My-Zsh。**
+> **安装前请保证电脑已经正确安装并配置好了 Oh-My-Zsh。**
 
 安装可以参考[nvm](https://github.com/nvm-sh/nvm)项目的 README 文档，可以在下面的命令二选一条在终端执行。
 
 ::: code-group
 
-```bash [国内镜像加速]
+```shell [国内镜像加速]
 # 使用 wget 命令安装
 wget -qO- https://raw.gitmirror.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
 # 使用 curl 命令安装
 curl -o- https://raw.gitmirror.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-````
+```
 
-```bash [GitHub]
+```shell [GitHub]
 # 使用 wget 命令安装
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
 # 使用 curl 命令安装
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 ```
+
 :::
 
 如果安装并配置好了 Oh-My-Zsh 终端的话，默认自动将对应的配置写入了 `~/.bash_profile`, `~/.zshrc`, `~/.profile` 或 `~/.zshrc` 文件中，内容为：
 
-```bash
+```shell
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
@@ -44,7 +45,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 ### 查看可供使用稳定版本
 
-```bash
+```shell
 nvm ls-remote
 ```
 
@@ -52,35 +53,36 @@ nvm ls-remote
 
 ### 查看本地已经有的 NodeJS
 
-```bash
+```shell
 nvm list
 ```
 
 ### 安装指定版本的 NodeJS
 
-```bash
+```shell
 nvm install v16.19.1
 ```
 
 ### 指定默认的 NodeJS 版本
 
-```bash
+```shell
 nvm alias default v16.19.1 # 指定默认的NodeJS版本
 nvm use default
 ```
-> 如果是切换不同版本的node，请确保对应的依赖已经安装，比如`yarn`，因为不同版本的node，对应的bin目录不一致，目录为：`~/.nvm/versions/node/v16.19.1/bin`。
+
+> 如果是切换不同版本的 node，请确保对应的依赖已经安装，比如`yarn`，因为不同版本的 node，对应的 bin 目录不一致，目录为：`~/.nvm/versions/node/v16.19.1/bin`。
 
 ### 查看系统当前使用的 NodeJS 版本
 
-```bash
+```shell
 nvm current
 ```
 
-> nvm管理的node安装的目录在 `~/.nvm/versions/node/` 下。
+> nvm 管理的 node 安装的目录在 `~/.nvm/versions/node/` 下。
 
 ### 卸载指定的 NodeJS 版本
 
-```bash
+```shell
 nvm uninstall v16.19.1 // 卸载v16.19.1
 ```
 
@@ -92,7 +94,7 @@ nvm uninstall v16.19.1 // 卸载v16.19.1
 
 ### 安装
 
-```bash
+```shell
 npm install -g nrm
 ```
 
@@ -102,18 +104,19 @@ npm install -g nrm
 
 #### 查看可用源
 
-```bash
+```shell
 nrm ls
 ```
+
 #### 使用指定源
 
-```bash
+```shell
 nrm use taobao
 ```
 
 #### 检查当前使用源
 
-```bash
+```shell
 nrm current
 ```
 
@@ -123,9 +126,7 @@ nrm current
 
 [`yarn`](https://yarnpkg.com/) 是一个快速、可靠、安全的依赖管理工具。
 
-```bash
-
-```bash
+```shell
 npm -g install yarn
 ```
 
@@ -139,7 +140,7 @@ npm -g install bun
 
 ## 安装全局依赖
 
-```bash
+```shell
 yarn global add cross-env live-server
 ```
 
