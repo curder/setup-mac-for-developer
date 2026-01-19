@@ -5,5 +5,10 @@ _book
 .temp
 .cache
 
+# Local-only notes / scratchpads (keep `plans/` tracked)
+.local/
+.notes/
+.tmp/
+
 docs/.vitepress/cache/
 docs/.vitepress/dist/
