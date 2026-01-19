@@ -1,6 +1,6 @@
 # 安装 nvm | nrm 和 yarn
 
-目前主流的 node 版本管理工具有两种，[nvm](https://github.com/creationix/nvm) 和 [n](https://github.com/tj/n)。 两者差异挺大的，具体分析可以参考一下淘宝 FED 团队的一篇文章：[管理 node 版本，选择 nvm 还是 n？](http://taobaofed.org/blog/2015/11/17/nvm-or-n/)。
+目前主流的 node 版本管理工具有两种，[nvm](https://github.com/nvm-sh/nvm) 和 [n](https://github.com/tj/n)。 两者差异挺大的，具体分析可以参考一下淘宝 FED 团队的一篇文章：[管理 node 版本，选择 nvm 还是 n？](http://taobaofed.org/blog/2015/11/17/nvm-or-n/)。
 
 这里选择 nvm 管理 node 版本。
 
@@ -13,19 +13,21 @@
 ::: code-group
 
 ```shell [国内镜像加速]
+# 访问 https://github.com/nvm-sh/nvm/releases 获取最新版本号，替换下面的 v0.40.3
 # 使用 wget 命令安装
-wget -qO- https://raw.gitmirror.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+wget -qO- https://raw.gitmirror.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 
 # 使用 curl 命令安装
-curl -o- https://raw.gitmirror.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+curl -o- https://raw.gitmirror.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 ```
 
 ```shell [GitHub]
+# 访问 https://github.com/nvm-sh/nvm/releases 获取最新版本号，替换下面的 v0.40.3
 # 使用 wget 命令安装
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 
 # 使用 curl 命令安装
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 ```
 
 :::
@@ -86,7 +88,7 @@ nvm current
 nvm uninstall v16.19.1 # 卸载v16.19.1
 ```
 
-至此，nvm 相关的基本操作完成，更多的操作请查看[nvm](https://github.com/creationix/nvm)项目的 README 说明。
+至此，nvm 相关的基本操作完成，更多的操作请查看[nvm](https://github.com/nvm-sh/nvm)项目的 README 说明。
 
 ## [nrm](https://github.com/Pana/nrm)
 
