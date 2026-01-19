@@ -83,7 +83,7 @@ nvm current
 ### 卸载指定的 NodeJS 版本
 
 ```shell
-nvm uninstall v16.19.1 // 卸载v16.19.1
+nvm uninstall v16.19.1 # 卸载v16.19.1
 ```
 
 至此，nvm 相关的基本操作完成，更多的操作请查看[nvm](https://github.com/creationix/nvm)项目的 README 说明。
@@ -130,45 +130,30 @@ nrm current
 
 ```shell
 npm -g install yarn
+
+yarn --version # 查看 Yarn 版本
 ```
 
-### [nrm](https://github.com/i5ting/yrm)
+:::code-group
 
-`yrm` 是 `yarn` 镜像仓库管理命令，可以帮助我们管理 `yarn` 镜像资源的下载地址。
 
-```shell
-npm install -g yrm
+```shell [For Yarn Classic (v1)]
+# 使用命令切换到淘宝镜像源安装, 配置的镜像源会写入到 `~/.yarnrc` 文件中。
+yarn config set registry https://registry.npmmirror.com --global
+
+# 回退官方源
+yarn config set registry https://registry.npmjs.org/ --global
 ```
 
-> 鉴于国内网络环境，如果下载速度慢或者下载失败，建议修改 npm 的从淘宝镜像地址下载资源，可以执行命令：`npm install -g yrm --registry=https://registry.npmmirror.com/`
+```shell [For Yarn Modern (v2+)]
+# 使用命令切换到淘宝镜像源安装, 配置的镜像源会写入到 `~/.yarnrc.yml` 文件中。
+yarn config set npmRegistryServer https://registry.npmmirror.com --global
 
-#### 查看可用源
-
-```shell
-yrm ls
+# 回退官方源
+yarn config set npmRegistryServer https://registry.npmjs.org/ --global
 ```
+:::
 
-#### 使用指定源
-
-```shell
-yrm use taobao
-```
-
-#### 检查当前使用源
-
-```shell
-yrm current
-```
-
-> 此时，在 `~/.yarnrc` 配置中自动配置：`registry "https://registry.npm.taobao.org/"` 和 `~/.npmrc` 配置中自动配置：`registry=https://registry.npmmirror.com/`。
-
-## 安装 bun
-
-[`bun`](https://bun.sh/) 是一个用于快速创建项目的脚手架工具。
-
-```shell
-npm -g install bun
-```
 
 ## 安装全局依赖
 
