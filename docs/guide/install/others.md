@@ -1,8 +1,8 @@
-# Others
+# Others {#others}
 
-## git
+## Git {#git}
 
-### 初始化目录
+### 初始化目录 {#initialize-git-directory}
 
 ```shell
 mkdir -p ~/.config/git
@@ -10,7 +10,7 @@ touch ~/.config/git/.gitconfig && ln -s ~/.config/git/.gitconfig ~/.gitconfig
 touch ~/.config/git/.gitignore_global
 ```
 
-### 忽略大小写
+### 忽略大小写 {#ignore-case}
 
 默认情况下，MacOS对[文件的大小写](https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreignoreCase)是不敏感的。
 
@@ -19,7 +19,7 @@ git config --global core.ignorecase # 查看忽略大小写
 git config --global core.ignorecase true # 设置为忽略大小写
 ```
 
-### 初始化用户信息
+### 初始化用户信息 {#initialize-user-info}
 
 ```shell
 git config --global user.name <"John Doe">
@@ -34,7 +34,7 @@ git config --global user.email <johndoe@example.com>
 git config --list # 通过命令查看当前配置
 ```
 
-### 配置 Git 全局忽略文件
+### 配置 Git 全局忽略文件 {#configure-global-gitignore}
 
 - 忽略文件内容
 
@@ -72,7 +72,7 @@ git config --list # 通过命令查看当前配置
   git config core.excludesfile
   ```
 
-## 屏蔽新建窗口 last login 提示
+## 屏蔽新建窗口 last login 提示 {#hide-last-login-prompt}
 
 ```shell
 touch ~/.hushlogin
@@ -80,7 +80,7 @@ touch ~/.hushlogin
 
 > 更多详情[参考这里](http://osxdaily.com/2010/06/22/remove-the-last-login-message-from-the-terminal/)
 
-## 启用简单密码
+## 启用简单密码 {#enable-simple-password}
 
 从 Mac 10.14 Mojave 开始，Mac 的密码就要求复杂，如果想设置简短一点的密码，可以使用下面的命令行终端命令开启它。
 
@@ -91,19 +91,19 @@ touch ~/.hushlogin
 4. 输入 `passwd` 按回车来变更当前账户密码（MacOS 15 版本的系统使用 `security set-keychain-passwor` 命令更新密码）
 
 
-## 设置新的主机名
+## 设置新的主机名 {#set-new-host-name}
 
 ```shell
 sudo scutil --set HostName <new host name> # sudo scutil --set HostName mac-mini
 ```
 
-## 设置本地网络上可用的名称
+## 设置本地网络上可用的名称 {#set-new-local-host-name}
 
 ```shell
 sudo scutil --set LocalHostName <new host name> # sudo scutil --set LocalHostName curder-mac-mini
 ```
 
-## 更改计算机名称
+## 更改计算机名称 {#set-new-computer-name}
 
 这是在 Finder 中看到的用户友好的计算机名称，例如 myMac
 
@@ -111,7 +111,7 @@ sudo scutil --set LocalHostName <new host name> # sudo scutil --set LocalHostNam
 sudo scutil --set ComputerName <new computer name> # sudo scutil --set ComputerName curder-mac-mini 
 ```
 
-## 刷新 DNS 缓存
+## 刷新 DNS 缓存 {#flush-dns-cache}
 
 | MacOS 版本                     | 命令                                                                             |
 |------------------------------|--------------------------------------------------------------------------------|
@@ -132,7 +132,7 @@ sudo scutil --set ComputerName <new computer name> # sudo scutil --set ComputerN
 | Mac OS X 10.5 (Leopard)      | 	`sudo lookupd -flushcache`                                                    |
 | Mac OS X 10.4 (Tiger)        | 	`lookupd -flushcache`                                                         |
 
-## 添加命令行别名
+## 添加命令行别名 {#add-aliases}
 
 将下面的配置文件写入到 `$HOME/.config/zsh/alias.zsh` 文件中，并在 `~/.zshrc` 中通过 `source $HOME/.config/zsh/alias.zsh` 的方式引入。
 
@@ -209,12 +209,12 @@ source ~/.zshrc # 重载配置
 ```
 
 
-## 添加命令行方法
+## 添加命令行方法 {#add-functions}
 
 将下面的配置文件写入到 `$HOME/.config/zsh/functions.zsh` 文件中，并在 `~/.zshrc` 中通过 `source $HOME/.config/zsh/functions.zsh` 的方式引入。
 
 ```shell
-# phpUnit or pest test
+# PHPUnit or Pest test
 function p() {
     if [ -f vendor/bin/pest ]; then
        vendor/bin/pest "$@"

@@ -1,55 +1,47 @@
-# PHP（可选）
+# PHP（可选）{#php}
 
 ::: warning 注意
 **如果选择使用 [MAMP](https://www.mamp.info/en/mamp-pro/mac/)、[Herd](https://herd.laravel.com/)、[Homestead](https://laravel.com/docs/master/homestead) 或 [Sail](https://laravel.com/docs/master/sail) 作为开发环境的话，可以不使用这种方式单独安装 PHP。**
 :::
 
-## PHP
-
-### 安装 [homebrew-php](https://github.com/shivammathur/homebrew-php) Tap
+## 安装 [homebrew-php](https://github.com/shivammathur/homebrew-php) Tap {#homebrew-php-tap}
 
 ```shell
 brew tap shivammathur/php
 ```
 
-### 搜索当前可用php版本
+## 搜索当前可用php版本
 ```shell
 brew search php
 
-# ==> Formulae
-# brew-php-switcher ✔               phplint                           shivammathur/php/php@7.0          shivammathur/php/php@7.4-debug
-# php ✔                             phpmd                             shivammathur/php/php@7.0-debug    # shivammathur/php/php@8.0 ✔
-# php-code-sniffer                  phpmyadmin                        shivammathur/php/php@7.1          shivammathur/php/php@8.0-debug
-# php-cs-fixer                      phpstan                           shivammathur/php/php@7.1-debug    shivammathur/php/php@8.1 ✔
-# php-cs-fixer@2                    phpunit                           shivammathur/php/php@7.2          shivammathur/php/php@8.1-debug
-# php@7.4 ✔                         shivammathur/php/php ✔            shivammathur/php/php@7.2-debug    shivammathur/php/php@8.3
-# php@8.0 ✔                         shivammathur/php/php-debug        shivammathur/php/php@7.3 ✔        shivammathur/php/php@8.3-debug
-# php@8.1 ✔                         shivammathur/php/php@5.6          shivammathur/php/php@7.3-debug    pup
-# phpbrew                           shivammathur/php/php@5.6-debug    shivammathur/php/php@7.4 ✔        pcp
+==> Formulae
+brew-php-switcher     php-cs-fixer          php@8.3               phpbrew               phpstan               pcp (disabled)
+php                   php@8.1 (deprecated)  php@8.4               phpmd (disabled)      phpunit               pyp
+php-code-sniffer      php@8.2               phpantom-lsp          phpmyadmin            pop
 ```
 
-### 安装指定版本php
+## 安装指定版本php {#install-specified-php-version}
 
-这里以 `PHP 8.2` 为例。
+这里以 `PHP 8.4` 为例。
+
+```shell
+brew install php@8.4
+```
+
+也可以安装其他版本的 PHP，比如再安装一个 `PHP 8.2`
 
 ```shell
 brew install php@8.2
 ```
 
-也可以安装其他版本的 PHP，比如再安装一个 `PHP 8.1`
-
-```shell
-brew install php@8.1
-```
-
-## PHP 扩展
+## PHP 扩展 {#php-extensions}
 
 安装 [shivammathur/extensions](https://github.com/shivammathur/homebrew-extensions)
 ```shell
 brew tap shivammathur/extensions
 ```
 
-### [mcrypt](https://pecl.php.net/package/mcrypt)
+### [mcrypt](https://pecl.php.net/package/mcrypt) {#mcrypt-extension}
 
 这里选择使用 [pecl](https://pecl.php.net) 进行安装，安装前先使用 `brew install mcrypt` 再 MacOS 上安装 mcrypt。
 
@@ -85,7 +77,7 @@ EOT
 php -m |grep mcrypt
 ```
 
-### [yaml](https://pecl.php.net/package/yaml)
+### [yaml](https://pecl.php.net/package/yaml) {#yaml-extension}
 
 这里选择使用 [pecl](https://pecl.php.net) 进行安装，安装前先使用 `brew install libyaml` 再 MacOS 上安装 libyaml。
 
@@ -121,7 +113,7 @@ EOT
 php -m |grep yaml
 ```
 
-### [redis](https://pecl.php.net/package/redis)
+### [redis](https://pecl.php.net/package/redis) {#redis-extension}
 
 选择使用源代码的方式安装最新版 `5.3.7` 的 [redis 扩展](https://pecl.php.net/package/redis)。
 
@@ -175,15 +167,15 @@ php -m |grep yaml
    ```
 
 
-## [brew-php-switcher](https://github.com/philcook/brew-php-switcher)
+## [brew-php-switcher](https://github.com/philcook/brew-php-switcher) {#brew-php-switcher}
 
-### 安装
+### 安装 {#install-brew-php-switcher}
 
 ```shell
 brew install brew-php-switcher
 ```
 
-### 检查
+### 检查 {#check-brew-php-switcher}
 ```shell
 brew search brew-php-switcher
 
@@ -191,7 +183,7 @@ brew search brew-php-switcher
 # brew-php-switcher ✔
 ```
 
-### [valet](https://laravel.com/docs/master/valet)可选
+### [valet](https://laravel.com/docs/master/valet)可选 {#valet-option}
 
 ```shell
 brew-php-switcher 8.2 -c=valet

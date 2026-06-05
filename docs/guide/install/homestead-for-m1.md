@@ -1,8 +1,8 @@
-# Homestead for M1
+# Homestead for M1 {#homestead-for-m1}
 
 [Homestead](https://laravel.com/docs/homestead) 提供了一个统一的 Laravel 开发环境，而无需在本地机器上安装 PHP、Web 服务器和任何其他服务器软件。
 
-## 前置准备
+## 前置准备 {#preparation}
 
 环境要求：
 
@@ -11,14 +11,14 @@
   ![](images/homestead-for-m1/show-mac-os-version.png)
   > 在电脑顶部主菜单的黑苹果图标处点击下拉菜单找到 "关于本机" 处找到当前电脑的系统概览
 
-## 软件安装
+## 软件安装 {#software-installation}
 
-### Parallels Desktop 18 for Mac
+### Parallels Desktop 18 for Mac {#parallels-desktop-18-for-mac}
 
 在 [Parallels Desktop 18 for Mac 官方地址](https://www.parallels.com/products/desktop/trial/)下载并安装到 Mac
 电脑，软件默认有 14 天的试用期。
 
-### Vagrant
+### Vagrant {#vagrant}
 
 在 [Vagrant 官方地址](https://www.vagrantup.com/downloads) 下载 `vagrant` 并安装到本地，软件开源免费。
 
@@ -26,7 +26,7 @@
 
 ![Show vagrant version](images/homestead-for-m1/vagrant-version.png)
 
-### Homestead
+### Homestead {#homestead}
 
 - 下载 [Homestead](https://github.com/laravel/homestead.git)
   ```shell
@@ -102,7 +102,7 @@
         ```
       ![](images/homestead-for-m1/vagrant-box-list-boxes.png)
 
-## 启动
+## 启动 {#start}
 
 ```shell
 vagrant up
@@ -113,14 +113,14 @@ vagrant up homestead # 指定名称
 
 ![](images/homestead-for-m1/homestead-preview.png)
 
-## 连接 Homestead 虚拟机
+## 连接 Homestead 虚拟机 {#connect-homestead}
 
 ```shell
 vagrant ssh
 ssh -i ~/.ssh/id_rsa vagrant@192.168.56.56 # 使用ssh方式登录
 ```
 
-## 卸载
+## 卸载 {#uninstall}
 
 - 卸载 Homestead 虚拟机
 

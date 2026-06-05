@@ -1,10 +1,10 @@
-# 安装 nvm | nrm 和 yarn
+# 安装 nvm | nrm 和 yarn {#nvm-install}
 
 目前主流的 node 版本管理工具有两种，[nvm](https://github.com/nvm-sh/nvm) 和 [n](https://github.com/tj/n)。 两者差异挺大的，具体分析可以参考一下淘宝 FED 团队的一篇文章：[管理 node 版本，选择 nvm 还是 n？](http://taobaofed.org/blog/2015/11/17/nvm-or-n/)。
 
 这里选择 nvm 管理 node 版本。
 
-## 安装 nvm
+## 安装 nvm {#install-nvm}
 
 > **安装前请保证电脑已经正确安装并配置好了 Oh-My-Zsh。**
 
@@ -43,9 +43,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 > 执行上面的命令时请在用户家目录执行。进入用户家目录的命令为：`cd ~`，检查是否为用户家目录的命令 `pwd`，显示为：`~/你的用户名`。
 
-## 简单使用 nvm
+## 简单使用 nvm {#usage-nvm}
 
-### 查看可供使用稳定版本
+### 查看可供使用稳定版本 {#available-stable-version}
 
 ```shell
 nvm ls-remote
@@ -53,19 +53,19 @@ nvm ls-remote
 
 > NodeJS 的版本发布很频繁，一般可以在[NodeJS 官网](https://nodejs.org/en/)看到 LTS 版本进行下载。
 
-### 查看本地已经有的 NodeJS
+### 查看本地已经有的 NodeJS {#installed-version}
 
 ```shell
 nvm list
 ```
 
-### 安装指定版本的 NodeJS
+### 安装指定版本的 NodeJS {#install-specific-version}
 
 ```shell
 nvm install v16.19.1
 ```
 
-### 指定默认的 NodeJS 版本
+### 指定默认的 NodeJS 版本 {#set-default-version}
 
 ```shell
 nvm alias default v16.19.1 # 指定默认的NodeJS版本
@@ -74,7 +74,7 @@ nvm use default
 
 > 如果是切换不同版本的 node，请确保对应的依赖已经安装，比如`yarn`，因为不同版本的 node，对应的 bin 目录不一致，目录为：`~/.nvm/versions/node/v16.19.1/bin`。
 
-### 查看系统当前使用的 NodeJS 版本
+### 查看系统当前使用的 NodeJS 版本 {#current-version}
 
 ```shell
 nvm current
@@ -82,7 +82,7 @@ nvm current
 
 > nvm 管理的 node 安装的目录在 `~/.nvm/versions/node/` 下。
 
-### 卸载指定的 NodeJS 版本
+### 卸载指定的 NodeJS 版本 {#uninstall-version}
 
 ```shell
 nvm uninstall v16.19.1 # 卸载v16.19.1
@@ -94,7 +94,7 @@ nvm uninstall v16.19.1 # 卸载v16.19.1
 
 `nrm` 是 `npm` 镜像仓库管理命令，可以帮助我们管理 `npm` 镜像资源的下载地址。
 
-### 安装
+### 安装 {#install-nrm}
 
 ```shell
 npm install -g nrm
@@ -102,21 +102,21 @@ npm install -g nrm
 
 > 鉴于国内网络环境，如果下载速度慢或者下载失败，建议修改 npm 的从淘宝镜像地址下载资源，可以执行命令：`npm install -g nrm --registry=https://registry.npmmirror.com/`
 
-### 简单使用 nrm
+### 简单使用 nrm {#usage-nrm}
 
-#### 查看可用源
+#### 查看可用源 {#available-registries}
 
 ```shell
 nrm ls
 ```
 
-#### 使用指定源
+#### 使用指定源 {#use-specific-registry}
 
 ```shell
 nrm use taobao
 ```
 
-#### 检查当前使用源
+#### 检查当前使用源 {#current-registry}
 
 ```shell
 nrm current
@@ -124,9 +124,9 @@ nrm current
 
 > 此时，在 `~/.npmrc` 配置中自动配置：`registry=https://registry.npmmirror.com/`
 
-## yarn
+## yarn {#yarn}
 
-### 安装
+### 安装 {#install-yarn}
 
 [`yarn`](https://yarnpkg.com/) 是一个快速、可靠、安全的依赖管理工具。
 
@@ -157,12 +157,12 @@ yarn config set npmRegistryServer https://registry.npmjs.org/ --global
 :::
 
 
-## 安装全局依赖
+## 安装全局依赖 {#install-global-dependencies}
 
 ```shell
 yarn global add cross-env live-server
 ```
 
-#### 参考链接
+## 参考链接 {#references}
 
 - [node 版本管理工具 nvm-Mac 下安装及使用](https://segmentfault.com/a/1190000004404505)

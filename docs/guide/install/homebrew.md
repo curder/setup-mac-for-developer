@@ -1,4 +1,4 @@
-# Homebrew
+# Homebrew {#homebrew}
 
 [Homebrew](https://brew.sh/zh-cn) 是 MacOS 上缺失的软件包的管理器，安装它之后可以在命令行终端安装常见的依赖或软件。
 
@@ -8,7 +8,7 @@
 本文所有的命令都需要在 MacOS 系统默认终端 Terminal 下运行。
 :::
 
-## 系统依赖
+## 系统依赖 {#system-dependencies}
 
 在安装 Homebrew 之前需要安装 `Xcode Command Line Tools`，使用命令：
 
@@ -23,7 +23,7 @@ xcode-select --install
 
 ![](images/homebrew/xcode-command-line-tools.png)
 
-## 安装
+## 安装 {#install-homebrew}
 
 在命令行终端执行下面的命令安装 Homebrew。
 
@@ -46,7 +46,7 @@ rm -rf brew-install
 ```
 :::
 
-## 查看版本
+## 查看版本 {#check-version}
 
 安装完成后，在终端输入 `brew -v` 命令，如果出现版本号，则说明安装成功。
 
@@ -54,29 +54,29 @@ rm -rf brew-install
 brew -v
 ```
 
-## 常用命令
+## 常用命令 {#common-commands}
 
 使用下面的常用命令命令对软件进行管理和维护。
 
-| 命令 | 说明 |
-| ---- | ---- |
-| `brew update` | 更新 Homebrew |
-| `brew list` | 查看已安装软件包 |
-| `brew outdated` | 查看已过时软件包 |
-| `brew search packageName` | 搜索软件包 |
-| `brew install packageName` | 安装软件包 |
-| `brew upgrade packageName` | 更新软件包 |
-| `brew info packageName` | 查看软件包信息 |
-| `brew uninstall packageName` | 卸载软件包 |
-| `brew install --cask packageName` | 安装 cask 软件 |
-| `brew uninstall --cask packageName` | 卸载 cask 软件 |
+| 命令                                  | 说明          |
+|-------------------------------------|-------------|
+| `brew update`                       | 更新 Homebrew |
+| `brew list`                         | 查看已安装软件包    |
+| `brew outdated`                     | 查看已过时软件包    |
+| `brew search packageName`           | 搜索软件包       |
+| `brew install packageName`          | 安装软件包       |
+| `brew upgrade packageName`          | 更新软件包       |
+| `brew info packageName`             | 查看软件包信息     |
+| `brew uninstall packageName`        | 卸载软件包       |
+| `brew install --cask packageName`   | 安装 cask 软件  |
+| `brew uninstall --cask packageName` | 卸载 cask 软件  |
 
 
-## 设置镜像源
+## 设置镜像源 {#set-mirror}
 
 下面以设置阿里源为例，也可以选择例如[清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/)等其他镜像源。
 
-### 临时替换
+### 临时替换 {#temporary-replace}
 
 在命令行终端执行下面的命令临时修改镜像源为阿里云的镜像源。
 
@@ -89,7 +89,7 @@ export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.aliyun.com/homebrew/homebrew-bott
 brew update
 ```
 
-### 永久替换
+### 永久替换 {#permanent-replace}
 
 在命令行终端执行下面的命令永久修改镜像源为阿里云的镜像源，使用不同终端的用户选择不同的命令执行。
 
@@ -115,7 +115,7 @@ brew update
 
 :::
 
-### 恢复默认配置
+### 恢复默认配置 {#restore-default}
 
 出于某些场景, 可能需要回退到默认配置, 可以通过在命令行执行下面的方式回退到默认配置。
 
@@ -134,7 +134,7 @@ brew update
 ```
 
 
-## 测试
+## 测试 {#test-homebrew}
 
 以安装常用的命令 `wget` 为例进行测试：
 
@@ -148,7 +148,7 @@ brew install wget
 苹果自研 ARM 架构的 CPU，软件包可执行文件软链接到 `/opt/homebrew/bin`。
 :::
 
-## 推荐软件
+## 推荐软件 {#recommended-software}
 
 安装一些开发中常用的软件包，例如：
 

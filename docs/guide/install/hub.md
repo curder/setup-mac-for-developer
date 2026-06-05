@@ -1,4 +1,4 @@
-# Hub
+# Hub {#hub}
 
 Hub 是一个git的命令行拓展，针对于我们经常操作[GitHub](https://github.com)相关任务，例如：创建仓库、克隆仓库等，而无需离开终端。
 
@@ -6,13 +6,13 @@ Hub 是一个git的命令行拓展，针对于我们经常操作[GitHub](https:/
 brew install hub
 ```
 
-## 检查是否安装
+## 检查是否安装 {#check-installation}
 
 ```shell
 hub version
 ```
 
-## 推荐配置
+## 推荐配置 {#configuration}
 
 - 环境变量
 将下面的语句添加到对应的bash配置中，比如：`~/.zshrc`
@@ -42,11 +42,9 @@ git config --global hub.protocol git
 git config --global hub.host github.com
 ```
 
-
-
 更多 [配置参考这里](https://hub.github.com/hub.1.html#configuration)。
 
-## 简单使用
+## 简单使用 {#usage}
 
 第一次使用命令操作仓库时，可能会需要需要输入用户名和密码的交互界面，请输入用户名，密码为：**上面得到的TOKEN**，后续则不需要重复用户名和密码的操作。
 
