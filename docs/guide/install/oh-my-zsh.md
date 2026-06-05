@@ -61,6 +61,10 @@ HIST_STAMPS="yyyy-mm-dd"  # 历史记录时间格式
 export LANG=en_US.UTF-8   # 语言
 ```
 
+- git：提供了大量 git 别名，默认自带的插件，具体用法参见 [GitHub 地址](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/README.md)
+- autojump：一个命令行工具，它允许用户可以直接跳转到常用的目录，而不用管用户现在身在何处，具体用法参见 [GitHub 地址](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/autojump/README.md)
+- zsh-autosuggestions：根据命令历史输入时的命令进行输入提示的插件，具体用法参见 [GitHub 地址](https://github.com/zsh-users/zsh-autosuggestions)
+
 ## 插件管理
 
 ### 插件配置
