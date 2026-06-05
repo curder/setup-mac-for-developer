@@ -8,11 +8,11 @@
 
 ::: code-group
 
-```bash [通过 homebrew 安装]
+```shell [通过 homebrew 安装]
 brew install iterm2
 ```
 
-```bash [通过访问网站下载]
+```shell [通过访问网站下载]
 # 将下载后的 .zip 压缩包解压，并将解压缩后的 `.app` 文件移动到`/Applications` 目录
 wget -O ~/Desktop/iterm2.zip https://iterm2.com/downloads/stable/latest
 ```

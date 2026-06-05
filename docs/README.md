@@ -7,7 +7,7 @@
 
 ## 开始
 
-```bash
+```shell
 git clone https://github.com/curder/setup-mac-for-developer.git
 cd setup-mac-for-developer
 

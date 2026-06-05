@@ -29,7 +29,7 @@
 ### Homestead
 
 - 下载 [Homestead](https://github.com/laravel/homestead.git)
-  ```bash
+  ```shell
   # Homestead 源码下载到本地的 `~/Homestead` 可以根据需要修改存放位置
   HOMESTEAD_PATH=~/Homestead
   git clone https://github.com/laravel/homestead.git $HOMESTEAD_PATH 
@@ -43,7 +43,7 @@
     - 安装 `vagrant-parallels` 插件
       Vagrant支持 [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
       和 [Parallels](https://www.parallels.com/products/desktop/)
-      ```bash
+      ```shell
       vagrant plugin install vagrant-parallels
       ```
       > 由于这里选择的是 Parallels
@@ -97,14 +97,14 @@
           > 镜像文件被添加到 `~/.vagrant.d/boxes` 目录下
 
         - 执行命令查看是否正常添加
-        ```bash
+        ```shell
         vagrant box list
         ```
       ![](images/homestead-for-m1/vagrant-box-list-boxes.png)
 
 ## 启动
 
-```bash
+```shell
 vagrant up
 vagrant up homestead # 指定名称
 ```
@@ -115,7 +115,7 @@ vagrant up homestead # 指定名称
 
 ## 连接 Homestead 虚拟机
 
-```bash
+```shell
 vagrant ssh
 ssh -i ~/.ssh/id_rsa vagrant@192.168.56.56 # 使用ssh方式登录
 ```
@@ -124,13 +124,13 @@ ssh -i ~/.ssh/id_rsa vagrant@192.168.56.56 # 使用ssh方式登录
 
 - 卸载 Homestead 虚拟机
 
-```bash
+```shell
 vagrant destroy homestead
 ```
 
 - 删除 Box
 
-```bash
+```shell
 vagrant box remove laravel/homestead-arm
 ```
 

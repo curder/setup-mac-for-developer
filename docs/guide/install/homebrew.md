@@ -13,7 +13,7 @@
 在安装 Homebrew 之前需要安装 `Xcode Command Line Tools`，使用命令：
 
 
-```bash
+```shell
 xcode-select --install
 ```
 
@@ -28,19 +28,19 @@ xcode-select --install
 在命令行终端执行下面的命令安装 Homebrew。
 
 ::: code-group
-```bash [从阿里云镜像安装]
+```shell [从阿里云镜像安装]
 # 从 Aliyun 下载安装脚本并安装 Homebrew 
 git clone https://mirrors.aliyun.com/homebrew/install.git brew-install
 /bin/bash brew-install/install.sh
 rm -rf brew-install
 ```
 
-```bash [使用 Gitee 地址下载]
+```shell [使用 Gitee 地址下载]
 # 从 Gitee 下载中文安装脚本并安装 Homebrew
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
 ```
 
-```bash [使用 GitHub 地址下载]
+```shell [使用 GitHub 地址下载]
 # 从 GitHub 获取官方安装脚本安装 Homebrew 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
@@ -50,7 +50,7 @@ rm -rf brew-install
 
 安装完成后，在终端输入 `brew -v` 命令，如果出现版本号，则说明安装成功。
 
-```bash
+```shell
 brew -v
 ```
 
@@ -80,7 +80,7 @@ brew -v
 
 在命令行终端执行下面的命令临时修改镜像源为阿里云的镜像源。
 
-```bash
+```shell
 export HOMEBREW_INSTALL_FROM_API=1
 export HOMEBREW_API_DOMAIN="https://mirrors.aliyun.com/homebrew-bottles/api"
 export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.aliyun.com/homebrew/brew.git"
@@ -104,7 +104,7 @@ source ~/.zshrc
 brew update
 ```
 
-```bash [bash 终端用户]
+```shell [bash 终端用户]
 echo 'export HOMEBREW_API_DOMAIN="https://mirrors.aliyun.com/homebrew-bottles/api"' >> ~/.bash_profile
 echo 'export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.aliyun.com/homebrew/brew.git"' >> ~/.bash_profile
 echo 'export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.aliyun.com/homebrew/homebrew-core.git"' >> ~/.bash_profile
@@ -119,7 +119,7 @@ brew update
 
 出于某些场景, 可能需要回退到默认配置, 可以通过在命令行执行下面的方式回退到默认配置。
 
-```bash
+```shell
 # 1. 删除环境变量
 unset HOMEBREW_BREW_GIT_REMOTE
 
@@ -138,7 +138,7 @@ brew update
 
 以安装常用的命令 `wget` 为例进行测试：
 
-```bash
+```shell
 brew install wget
 ```
 
@@ -152,7 +152,7 @@ brew install wget
 
 安装一些开发中常用的软件包，例如：
 
-```bash
+```shell
 brew install libzip \
  libpq \
  mozjpeg \

@@ -1,12 +1,12 @@
-# 安装 Composer
+# Composer {#composer}
 
 > **注意：** 执行安装命令前保证 PHP 已经安装到电脑并放在对应的 bin 目录下。
 >
 >在终端执行 `php --version`，可以查看PHP版本，这里建议使用 [PHP 8.1](https://www.php.net/releases/8.1/zh.php) 作为面向未来的语言版本。
 
-## 安装命令
+## 安装命令 {#install-command}
 
-```bash
+```shell
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
@@ -14,31 +14,30 @@ php -r "unlink('composer-setup.php');"
 
 > See: [getcompose v1.10.26](https://getcomposer.org/download/)
 
-## 移动到全局 bin 路径
+## 移动到全局 bin 路径 {#move-to-global-bin-path}
 
-```bash
+```shell
 sudo mv composer.phar /usr/local/bin/composer
 ```
 
 > 通过上面的命令将可执行文件 composer 移动到全局 bin 路径
 
 
-
 默认情况下安装的 composer 为 `2.5.5` 的版本。切换到 `1.10.26`
 
-```bash
+```shell
 composer self-update --1
 ```
 
 检查并确定下版本
 
-```bash
+```shell
 composer -V # 查看当前composer版本
 ```
 
 ## 将 Composer 包关联的命令添加到 bin
 
-```bash
+```shell
 export PATH="$HOME/.composer/vendor/bin:$PATH" # MacOSX 配置到 `~/.zshrc` 文件
 
 export PATH="$HOME/.config/composer/vendor/bin:$PATH" # CentOS 配置到 `/etc/profile` 文件

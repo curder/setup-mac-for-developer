@@ -2,19 +2,19 @@
 
 [FiloSottile/mkcert](https://github.com/FiloSottile/mkcert) 是制作本地信任的开发证书的简单工具。
 
-```bash
+```shell
 brew install mkcert
 brew install nss # if you use Firefox
 ```
 ## 初始化配置
 
-```bash
+```shell
 mkcert -install
 ```
 
 ## 创建统一存放目录
 
-```bash
+```shell
 mkdir -p ~/.certs/ # 创建对应存放目录
 
 ls -l ~/.certs # 查看目录是否存在
@@ -22,7 +22,7 @@ ls -l ~/.certs # 查看目录是否存在
 
 ## 生成证书
 
-```bash
+```shell
 export ssl_path=~/.certs
 export domain=example.test
 

@@ -8,12 +8,12 @@
 
 ### 安装 [homebrew-php](https://github.com/shivammathur/homebrew-php) Tap
 
-```bash
+```shell
 brew tap shivammathur/php
 ```
 
 ### 搜索当前可用php版本
-```bash
+```shell
 brew search php
 
 # ==> Formulae
@@ -32,20 +32,20 @@ brew search php
 
 这里以 `PHP 8.2` 为例。
 
-```bash
+```shell
 brew install php@8.2
 ```
 
 也可以安装其他版本的 PHP，比如再安装一个 `PHP 8.1`
 
-```bash
+```shell
 brew install php@8.1
 ```
 
 ## PHP 扩展
 
 安装 [shivammathur/extensions](https://github.com/shivammathur/homebrew-extensions)
-```bash
+```shell
 brew tap shivammathur/extensions
 ```
 
@@ -55,7 +55,7 @@ brew tap shivammathur/extensions
 
 确定本机 `pecl` 可执行文件所在路径，比如在 Apple M1 电脑上给 `PHP 8.1` 安装 `mcrypt` 扩展，`pecl` 可执行命令 所在路径大概是：`/opt/homebrew/opt/php@8.1/bin/pecl`
 
-```bash
+```shell
 # 搜索要安装的扩展包
 /opt/homebrew/opt/php@8.1/bin/pecl search mcrypt
 
@@ -91,7 +91,7 @@ php -m |grep mcrypt
 
 确定本机 `pecl` 可执行文件所在路径，比如在 Apple M1 电脑上给 `PHP 8.2` 安装 `libyaml` 扩展，`pecl` 可执行命令 所在路径大概是：`/opt/homebrew/opt/php@8.2/bin/pecl`
 
-```bash
+```shell
 # 搜索要安装的扩展包
 /opt/homebrew/opt/php@8.2/bin/pecl search yaml 
 
@@ -129,19 +129,19 @@ php -m |grep yaml
 
 1. 使用 `wget` 下载 `redis-5.3.7.tgz` 压缩包
 
-    ```bash
+    ```shell
     wget https://pecl.php.net/get/redis-5.3.7.tgz
     ```
 
 2. 解压并进入到目录
 
-    ```bash
+    ```shell
     tar xf redis-5.3.7.tgz && cd redis-5.3.7
     ```
    
 3. 执行 `phpize` （根据当前 PHP 版本不同找到对应的可执行文件 `phpize` ）
 
-    ```bash
+    ```shell
     /opt/homebrew/opt/php@8.2/bin/phpize # M1
     /usr/local/Cellar/php/8.2.3/bin/phpize # Intel
     # 执行完毕之后当前目录下生成 configure 文件
@@ -156,12 +156,12 @@ php -m |grep yaml
 
 5. 执行安装
 
-    ```bash
+    ```shell
     make && make install
     ```
 
 6. 添加扩展
-   ```bash
+   ```shell
     echo <<EOT >> /opt/homebrew/etc/php/8.2/conf.d/ext-redis.ini
     [redis]
     extension=redis.so
@@ -170,7 +170,7 @@ php -m |grep yaml
 
 7. 检查
 
-   ```bash
+   ```shell
    php -m |grep redis
    ```
 
@@ -179,12 +179,12 @@ php -m |grep yaml
 
 ### 安装
 
-```bash
+```shell
 brew install brew-php-switcher
 ```
 
 ### 检查
-```bash
+```shell
 brew search brew-php-switcher
 
 # ==> Formulae
@@ -193,6 +193,6 @@ brew search brew-php-switcher
 
 ### [valet](https://laravel.com/docs/master/valet)可选
 
-```bash
+```shell
 brew-php-switcher 8.2 -c=valet
 ```

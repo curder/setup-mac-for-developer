@@ -4,7 +4,7 @@
 
 ### 初始化目录
 
-```bash
+```shell
 mkdir -p ~/.config/git
 touch ~/.config/git/.gitconfig && ln -s ~/.config/git/.gitconfig ~/.gitconfig
 touch ~/.config/git/.gitignore_global
@@ -14,14 +14,14 @@ touch ~/.config/git/.gitignore_global
 
 默认情况下，MacOS对[文件的大小写](https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreignoreCase)是不敏感的。
 
-```bash
+```shell
 git config --global core.ignorecase # 查看忽略大小写
 git config --global core.ignorecase true # 设置为忽略大小写
 ```
 
 ### 初始化用户信息
 
-```bash
+```shell
 git config --global user.name <"John Doe">
 git config --global user.email <johndoe@example.com>
 ```
@@ -30,7 +30,7 @@ git config --global user.email <johndoe@example.com>
 
 参考 [Git 文档](https://git-scm.com/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE#%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF)
 
-```bash
+```shell
 git config --list # 通过命令查看当前配置
 ```
 
@@ -38,7 +38,7 @@ git config --list # 通过命令查看当前配置
 
 - 忽略文件内容
 
-  ```bash
+  ```shell
   echo '# .gitignore_global
   ####################################
   ######## OS generated files ########
@@ -63,18 +63,18 @@ git config --list # 通过命令查看当前配置
   > 执行完上面的命令后，内容被保存到 `~/.config/git/.gitignore_global`
 
 - 执行命令使配置文件生效
-  ```bash
+  ```shell
   git config --global core.excludesfile ~/.config/git/.gitignore_global
   ```
 
 - 执行命令检查配置是否生效
-  ```bash
+  ```shell
   git config core.excludesfile
   ```
 
 ## 屏蔽新建窗口 last login 提示
 
-```bash
+```shell
 touch ~/.hushlogin
 ```
 
@@ -93,13 +93,13 @@ touch ~/.hushlogin
 
 ## 设置新的主机名
 
-```bash
+```shell
 sudo scutil --set HostName <new host name> # sudo scutil --set HostName mac-mini
 ```
 
 ## 设置本地网络上可用的名称
 
-```bash
+```shell
 sudo scutil --set LocalHostName <new host name> # sudo scutil --set LocalHostName curder-mac-mini
 ```
 
@@ -107,7 +107,7 @@ sudo scutil --set LocalHostName <new host name> # sudo scutil --set LocalHostNam
 
 这是在 Finder 中看到的用户友好的计算机名称，例如 myMac
 
-```bash
+```shell
 sudo scutil --set ComputerName <new computer name> # sudo scutil --set ComputerName curder-mac-mini 
 ```
 
@@ -136,7 +136,7 @@ sudo scutil --set ComputerName <new computer name> # sudo scutil --set ComputerN
 
 将下面的配置文件写入到 `$HOME/.config/zsh/alias.zsh` 文件中，并在 `~/.zshrc` 中通过 `source $HOME/.config/zsh/alias.zsh` 的方式引入。
 
-```bash
+```shell
 # paths
 alias ...='../..'
 alias ....='../../..'
@@ -200,7 +200,7 @@ alias zz="Zzz"
 alias zzz="Zzz"
 ```
 
-```bash
+```shell
 echo "# Aliases" >> ~/.zshrc
 
 echo '[ -f "$HOME/.config/zsh/alias.zsh" ] && source "$HOME/.config/zsh/alias.zsh"' >> ~/.zshrc
@@ -213,7 +213,7 @@ source ~/.zshrc # 重载配置
 
 将下面的配置文件写入到 `$HOME/.config/zsh/functions.zsh` 文件中，并在 `~/.zshrc` 中通过 `source $HOME/.config/zsh/functions.zsh` 的方式引入。
 
-```bash
+```shell
 # phpUnit or pest test
 function p() {
     if [ -f vendor/bin/pest ]; then
@@ -233,7 +233,7 @@ function pf() {
 ```
 
 
-```bash
+```shell
 echo "# Functions" >> ~/.zshrc
 echo '[ -f "$HOME/.config/zsh/functions.zsh" ] && source "$HOME/.config/zsh/functions.zsh"' >> ~/.zshrc
 

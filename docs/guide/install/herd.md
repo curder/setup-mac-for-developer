@@ -6,7 +6,7 @@ Herd 是一款速度超快的原生 Laravel 和 PHP 开发环境，适用于 mac
 
 要安装 Herd，请打开终端并运行以下命令：
 
-```bash
+```shell
 brew install --cask herd
 
 # 或者使用下面的命令
@@ -15,7 +15,7 @@ brew install --cask herd
 
 安装完成并启动 Herd，支持如下可执行脚本：
 
-```bash
+```shell
 php --version
 laravel --version
 composer --version
@@ -28,7 +28,7 @@ node --version
 
 ### Composer
 
-```bash
+```shell
 # 使用阿里云镜像
 composer config -g repos.packagist composer https://mirrors.aliyun.com/composer
 
