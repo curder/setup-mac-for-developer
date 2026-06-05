@@ -2,8 +2,8 @@
 
 [![Deploy VitePress site to Pages](https://github.com/curder/setup-mac-for-developer/actions/workflows/deploy.yml/badge.svg)](https://github.com/curder/setup-mac-for-developer/actions/workflows/deploy.yml)
 
-- github.io 地址：[curder/setup-mac-for-developer](https://curder.github.io/setup-mac-for-developer)
-- github 源代码地址：[curder/setup-mac-for-developer](https://github.com/curder/setup-mac-for-developer)
+- github.io 在线预览：[curder/setup-mac-for-developer](https://curder.github.io/setup-mac-for-developer)
+- github 源代码仓库：[curder/setup-mac-for-developer](https://github.com/curder/setup-mac-for-developer)
 
 ## 开始
 

@@ -59,12 +59,12 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             text: '选装',
             collapsed: true,
             items: [
-                { text: 'PHP', link: '/guide/install/php' },
-                { text: 'Node', link: '/guide/install/nvm' },
-                { text: 'Composer', link: '/guide/install/composer' },
-                { text: 'Hub', link: '/guide/install/hub' },
-                { text: 'mkcert', link: '/guide/install/mkcert' },
-                { text: 'Homestead', link: '/guide/install/homestead-for-m1' },
+                { text: 'PHP', link: '/guide/optional/php' },
+                { text: 'Node', link: '/guide/optional/nvm' },
+                { text: 'Composer', link: '/guide/optional/composer' },
+                { text: 'Hub', link: '/guide/optional/hub' },
+                { text: 'mkcert', link: '/guide/optional/mkcert' },
+                { text: 'Homestead', link: '/guide/optional/homestead-for-m1' },
             ],
         },
     ]
