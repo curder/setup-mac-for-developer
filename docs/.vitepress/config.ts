@@ -52,7 +52,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 { text: '5. Sublime Text', link: '/guide/install/sublime-text' },
                 { text: '6. PHPStorm', link: '/guide/install/phpstorm' },
                 { text: '7. Herd', link: '/guide/install/herd' },
-                { text: '8. Redis', link: '/guide/install/redis' },
+                { text: '8. Database', link: '/guide/install/database' },
                 { text: '9. Others', link: '/guide/install/others' },
             ],
         },
